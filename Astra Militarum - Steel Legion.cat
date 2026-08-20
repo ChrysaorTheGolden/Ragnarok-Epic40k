@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b090-b976-1f4d-4f81" name="Astra Militarum - Steel Legion" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Strategy and Initiative" id="cf43-2fdf-281b-652a" hidden="false">
+      <description>Steel Legion armies have a Strategy Rating of 2. Collegia Titanica formations have an Initiative Rating of 1+. All other formations have an Initiative Rating of 2+. </description>
+      <comment>steel legion</comment>
+    </rule>
+    <rule name="Lightning Charge" id="3e34-bbbb-eb61-45b9" hidden="false">
+      <description>Weapon or Unit gains First Strike during engages initiated by the formation.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Fire Support Squad" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="7cdd-fde3-61df-8fba">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">n/a</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Commissar" typeId="d13a-b2a2-7b87-1437" typeName="Character" hidden="false" id="03d9-8779-3d1e-1660">
+      <characteristics>
+        <characteristic name="Abilities" typeId="94d2-55c0-b43d-c05f">Leader, Inspiring, Fearless</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Infantry" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="e779-0e3c-1d14-9d27">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">n/a</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">One in every two units (rounding up) has an Autocannon </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ogryns" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="8274-6000-4fe9-51fb">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">3+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">4+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Counts as two units of INF for the purpose of being transported</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Snipers" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="b433-f7ea-e29a-02a1">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">n/a</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Scouts</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rough Riders" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="f897-2ce3-b09f-80ce">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">6+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Infiltrators, Mounted, Walker, Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Steel Legion Commander" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="e1c8-fb65-0b98-e4f8">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">4+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Commander</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Steel Legion Supreme Commander" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="777a-27db-108e-6bbd">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">4+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Supreme Commander</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Storm Troopers" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="31c2-22ba-ff21-16a3">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">5+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sentinel" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="aea3-4a1e-6991-0569">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">LV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Scout, Walker</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bombard" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="f484-083f-8327-4a49">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Hellhound" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="697c-3e86-1759-46a1">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">30cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Chimera" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="7547-77f9-2558-a597">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">30cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Transport</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Griffon" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="1984-ab5d-bbd4-fc9f">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">30cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Deathstrike" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="9682-7f51-0179-71d1">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Taurox" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="3a53-efe4-e9ba-f955">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">30cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Transport</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Manticore" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="4b1e-b79c-139c-9014">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Leman Russ" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="d968-f392-ea7b-a100">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hydra" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="d6c6-ad2f-5b9e-8b26">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">30cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Leman Russ Vanquisher" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="9c10-aa71-95f6-592a">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Leman Russ Punisher" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="1755-add6-390e-814c">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Leman Russ Demolisher" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="21bb-5563-df18-712d">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Valkyrie" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="c10c-a4b9-6dcd-6a46">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">35cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Skimmer, Transport</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Baneblade" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="4676-c8f6-5d6d-f618">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">WE</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shadowsword" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="aecc-4e45-8b42-0ce5">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">WE</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
