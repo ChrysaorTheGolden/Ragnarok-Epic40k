@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="1cf9-5a5b-09af-7c5a" name="Librarium - Terrain" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType name="Terrain" id="b3dd-1322-71bc-0386" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Infantry Save" id="6eaa-5020-4b08-11ad"/>
+        <characteristicType name="Vehicles" id="0669-3736-b0a6-5563"/>
+        <characteristicType name="War Engines" id="042e-c3f9-7b59-187b"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedRules>
+    <rule name="Cover Save" id="a6b3-e070-3bfa-b730" hidden="false">
+      <description>Certain terrain is noted as giving infantry a cover save. While in such terrain, the infantry receive the cover save listed on the Terrain table in addition to the -1 to hit modifier for being in cover.
+
+
+The cover save can be used instead of their normal armour save whenever they have to take an armour save. Note that they can use one or the other of these saves against a hit, not both.</description>
+    </rule>
+    <rule name="Dangerous" id="633e-6d76-efa5-de4d" hidden="false">
+      <description>When a unit enters dangerous terrain, or when it starts to move if already in dangerous terrain, roll a D6; on a roll of 1, the unit is destroyed with no save allowed (but do not place a Blast marker for this).
+
+
+You may choose to move your units through dangerous terrain cautiously. When you move a unit cautiously:
+-- treat the unit as having a Speed value of 5cm
+-- you may re-roll any Dangerous Terrain test you fail for the unit</description>
+    </rule>
+    <rule name="Difficult" id="4dfc-1718-7d7b-8e5f" hidden="false">
+      <description>Roll a D6 when you enter difficult terrain, or when you start to move if already in difficult terrain. On a roll of 1 you roll a second die. On a roll of 1-3 on the second die, the unit takes a hit with no save allowed, but the formation it is part of does not receive a Blast marker. 
+
+
+Units may choose to move through difficult terrain cautiously. Such a unit counts as having a speed of 5cm, but does not have to roll any Difficult Terrain test. 
+
+
+Units with the Walker special rule may move through Difficult terrain without rolling Difficult terrain tests.</description>
+    </rule>
+    <rule name="Hills" id="e26e-37e0-57fa-60e4" hidden="false"/>
+    <rule name="Roads" id="812d-d9c8-6319-e658" hidden="false">
+      <description>Units that spend a whole move on a road may add 5cms to their move (does not apply to non-standard movement such as counter charges or consolidation movement). In addition, if all units in the formation are on a road at the start of their action, you may declare they will make a road move. If the formation selects an Advance, Double or March action they get +1 to the activation roll. However, all the units in the formation must remain on the road during the entire action.</description>
+    </rule>
+    <rule name="Using Vehicles as Cover" id="38e8-33a2-8b3a-b347" hidden="false">
+      <description>Infantry units counts as being in cover and receive the -1 to hit modifier (but no cover save) if they are touching a friendly Armoured Vehicle or War Engine, to represent their ability to take cover from enemy fire by crouching behind the vehicle. 
+
+
+There can be no more than two units for each Armoured Vehicle, four for each H-AV, or two for each DC that a War Engine has.</description>
+    </rule>
+    <rule name="Overwatch and Cover" id="b25b-3f27-b286-5d07" hidden="false">
+      <description>An infantry unit on Overwatch receives a -1 to be hit and a 5+ cover save, even in open ground.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Trenches" typeId="b3dd-1322-71bc-0386" typeName="Terrain" hidden="false" id="5e7f-b8c5-d76b-9bdd">
+      <characteristics>
+        <characteristic name="Infantry Save" typeId="6eaa-5020-4b08-11ad">4+</characteristic>
+        <characteristic name="Vehicles" typeId="0669-3736-b0a6-5563">Dangerous</characteristic>
+        <characteristic name="War Engines" typeId="042e-c3f9-7b59-187b">No effect</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gun Emplacement" typeId="b3dd-1322-71bc-0386" typeName="Terrain" hidden="false" id="950a-9f16-79c6-6df5">
+      <characteristics>
+        <characteristic name="Infantry Save" typeId="6eaa-5020-4b08-11ad">4+</characteristic>
+        <characteristic name="Vehicles" typeId="0669-3736-b0a6-5563">4+</characteristic>
+        <characteristic name="War Engines" typeId="042e-c3f9-7b59-187b">No effect</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bunker" typeId="b3dd-1322-71bc-0386" typeName="Terrain" hidden="false" id="d9fa-2c96-2433-34bb">
+      <characteristics>
+        <characteristic name="Infantry Save" typeId="6eaa-5020-4b08-11ad">3+</characteristic>
+        <characteristic name="Vehicles" typeId="0669-3736-b0a6-5563">Dangerous</characteristic>
+        <characteristic name="War Engines" typeId="042e-c3f9-7b59-187b">Impassable</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="New Profile" typeId="b3dd-1322-71bc-0386" typeName="Terrain" hidden="false" id="5995-3160-84d3-59aa">
+      <characteristics>
+        <characteristic name="Infantry Save" typeId="6eaa-5020-4b08-11ad"/>
+        <characteristic name="Vehicles" typeId="0669-3736-b0a6-5563"/>
+        <characteristic name="War Engines" typeId="042e-c3f9-7b59-187b"/>
+      </characteristics>
+    </profile>
+    <profile name="New Profile" typeId="b3dd-1322-71bc-0386" typeName="Terrain" hidden="false" id="834f-5d20-f37d-b1d6">
+      <characteristics>
+        <characteristic name="Infantry Save" typeId="6eaa-5020-4b08-11ad"/>
+        <characteristic name="Vehicles" typeId="0669-3736-b0a6-5563"/>
+        <characteristic name="War Engines" typeId="042e-c3f9-7b59-187b"/>
+      </characteristics>
+    </profile>
+    <profile name="Barricades" typeId="b3dd-1322-71bc-0386" typeName="Terrain" hidden="false" id="9f51-fbc6-3fa3-562a">
+      <characteristics>
+        <characteristic name="Infantry Save" typeId="6eaa-5020-4b08-11ad">5+</characteristic>
+        <characteristic name="Vehicles" typeId="0669-3736-b0a6-5563">Dangerous</characteristic>
+        <characteristic name="War Engines" typeId="042e-c3f9-7b59-187b">No effect</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

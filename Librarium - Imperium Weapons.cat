@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="e473-96d7-a3bd-c71d" name="Librarium - Imperium Weapons" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Heavy Flamer" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="0455-c4bc-6a25-0a72">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">15cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twin Autocannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="4a24-6dc4-57ac-2f84">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Flamer" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="a988-e259-abd0-9aff">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bolt Pistol" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="dfdd-3353-16f0-1244">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Chainswords" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="5a7a-dabe-e325-d89a">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1"/>
+      </characteristics>
+    </profile>
+    <profile name="Power Weapon" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="f59f-a2d2-990c-8223">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1">EA (+1), MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Assault Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="2393-559f-d7ff-615f">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+, AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Deathwind" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="4108-5ea0-50c0-faa0">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">15cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 6+, AT 6+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Demolisher" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="7879-7ba1-0163-c1c2">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 3+, AT 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Bolter" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="ae1d-3a39-339c-8534">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Hunter-Killer" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="6ba1-e2eb-5b7d-42ab">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">60cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AT 4+, AA 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Icarus Stormcannons" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="dd77-fe77-8154-1d9b">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">2x AP 5+/AT 5+/AA 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+      <comment>stalker</comment>
+    </profile>
+    <profile name="Lascannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="d3ff-d7f2-63e1-ea46">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Missile Launcher" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="e47a-672b-73c7-a1b6">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45 cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+, AT 6+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Multi-melta" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="1781-fa32-e4ac-59f4">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">15cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">MW 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Predator Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="67c4-ac71-1577-01c4">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">2x AP 5+/AT 6+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+      <comment>destructor</comment>
+    </profile>
+    <profile name="Twin Heavy Bolter" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="8f60-15fa-ddf3-1aff">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin Lascannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="6430-30db-afa0-8d88">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AT 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin Typhoon Missile" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="309c-354e-a9a1-6183">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 3+, AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Bolters" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="e3ca-c01b-30f7-cd2b">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Multi-melta" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="4362-a2b2-755b-a289">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Smite" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="69c6-92db-b526-d57f">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3">Extra Attacks (+1), Macro-weapon</characteristic>
+      </characteristics>
+      <comment>librarian</comment>
+    </profile>
+    <profile name="Plasma Pistols" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="b3d3-29bd-9140-4290">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Storm Bolter" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="be13-b9a7-4e4a-d8b5">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin Bolter" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="76d0-cfe8-d787-8e7b">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Power Fist" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="4892-c53a-18d9-a041">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1">EA (+1), MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plasma Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="7e2b-bde4-c05e-9029">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+, AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Twin Assault Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="0e6a-b345-2722-6bec">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b090-b976-1f4d-4f81" name="Astra Militarum - Steel Legion" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b090-b976-1f4d-4f81" name="Librarium - Astra Militarum" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Strategy and Initiative" id="cf43-2fdf-281b-652a" hidden="false">
-      <description>Steel Legion armies have a Strategy Rating of 2. Collegia Titanica formations have an Initiative Rating of 1+. All other formations have an Initiative Rating of 2+. </description>
+      <description>Steel Legion armies have a Strategy Rating of 2. Collegia Titanica formations have an Initiative Rating of 1+. All other formations have an Initiative Rating of 2+.</description>
       <comment>steel legion</comment>
     </rule>
     <rule name="Lightning Charge" id="3e34-bbbb-eb61-45b9" hidden="false">
       <description>Weapon or Unit gains First Strike during engages initiated by the formation.</description>
+    </rule>
+    <rule name="Courage, Discipline, and Loyalty" id="651e-ffc3-f771-995b" hidden="false">
+      <description>When the Supreme Commander re-roll is used on a formation that contains a Commissar or a Ministorum Priest, the formation counts as having 1+ Initiative Rating when re-rolling the Action Test.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -32,7 +35,7 @@
         <characteristic name="Armour" typeId="3658-a380-5564-f0af">n/a</characteristic>
         <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
         <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
-        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">One in every two units (rounding up) has an Autocannon </characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">One in every two units (rounding up) has an Autocannon</characteristic>
       </characteristics>
     </profile>
     <profile name="Ogryns" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="8274-6000-4fe9-51fb">
@@ -255,5 +258,165 @@
         <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
       </characteristics>
     </profile>
+    <profile name="Laspistols" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="b200-3c8a-eb42-bce6">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Ripper Guns" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="3281-da56-b8fc-f966">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Lasguns" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="d604-7104-78c4-aea3">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3"/>
+      </characteristics>
+    </profile>
+    <profile name="Hunting Lances" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="5cfc-84bc-2db2-0133">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1">Lightning Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sniper Rifles" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="a41c-f77f-4e37-9d17">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">Sniper</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Earthshaker Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="68bf-1793-83f2-f451">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">120cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Earthshaker Cannon" typeId="7ad8-0be0-74ea-cc38" typeName="Barrage" hidden="false" id="9f4c-90ad-4bcf-177e">
+      <characteristics>
+        <characteristic name="Range" typeId="cbbd-e252-814f-2f79">120cm</characteristic>
+        <characteristic name="BP" typeId="f60d-f05e-082d-7f6f">1</characteristic>
+        <characteristic name="Abilities" typeId="24ac-8a7d-e931-1805">Indirect</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Multilaser" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="e080-9fcc-041a-b584">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+, AT 6+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Plasma Guns" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="2686-f1e7-52fa-1728">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">15cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 5+, AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Siege Mortar" typeId="7ad8-0be0-74ea-cc38" typeName="Barrage" hidden="false" id="6cdb-8fa6-5c4c-e88a">
+      <characteristics>
+        <characteristic name="Range" typeId="cbbd-e252-814f-2f79">45cm</characteristic>
+        <characteristic name="BP" typeId="f60d-f05e-082d-7f6f">2</characteristic>
+        <characteristic name="Abilities" typeId="24ac-8a7d-e931-1805">Ignore Cover, Indirect, Slow Firing</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Deathstrike Missile" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="0694-a3d8-4e95-d750">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">Unlimited</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">MW 3+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">Indirect, TK(d3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Mortar" typeId="7ad8-0be0-74ea-cc38" typeName="Barrage" hidden="false" id="fee6-0810-66cc-ac6b">
+      <characteristics>
+        <characteristic name="Range" typeId="cbbd-e252-814f-2f79">30cm</characteristic>
+        <characteristic name="BP" typeId="f60d-f05e-082d-7f6f">1</characteristic>
+        <characteristic name="Abilities" typeId="24ac-8a7d-e931-1805">Indirect</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twin Hydra Autocannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="d63c-5a8b-3ade-6234">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 5+, AA 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Punisher Gatling Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="5ede-dd12-6065-4b6c">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">3x AP 6+/AT 6+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Vanquisher Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="4a13-a3a6-ff54-b1c0">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">90cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 2+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Battle Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="77e6-0a0a-abf0-d7b8">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">75cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+      <comment>leman russ</comment>
+    </profile>
+    <profile name="Rocket Launcher" typeId="7ad8-0be0-74ea-cc38" typeName="Barrage" hidden="false" id="f8ef-2964-dc3e-c339">
+      <characteristics>
+        <characteristic name="Range" typeId="cbbd-e252-814f-2f79">120cm</characteristic>
+        <characteristic name="BP" typeId="f60d-f05e-082d-7f6f">2</characteristic>
+        <characteristic name="Abilities" typeId="24ac-8a7d-e931-1805">Disrupt, Indirect, Slow Firing</characteristic>
+      </characteristics>
+      <comment>manticore</comment>
+    </profile>
+    <profile name="Rocket Pods" typeId="7ad8-0be0-74ea-cc38" typeName="Barrage" hidden="false" id="474e-7215-837c-5cba">
+      <characteristics>
+        <characteristic name="Range" typeId="cbbd-e252-814f-2f79">30cm</characteristic>
+        <characteristic name="BP" typeId="f60d-f05e-082d-7f6f">1</characteristic>
+        <characteristic name="Abilities" typeId="24ac-8a7d-e931-1805">Disrupt</characteristic>
+      </characteristics>
+      <comment>valkyrie</comment>
+    </profile>
+    <profile name="Hellstrike Missiles" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="0834-404b-1025-e071">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">120cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AT 2+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">Single Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Baneblade Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="9630-ef95-2d14-497a">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">90cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 3+, AT 3+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Volcano Cannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="397a-8087-92f8-aaff">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">90cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">MW 2+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">TK(d3), FxF</characteristic>
+      </characteristics>
+      <comment>shadowsword</comment>
+    </profile>
+    <profile name="Baneblade" typeId="3511-2c68-62ed-e6eb" typeName="War Engine" hidden="false" id="0116-af29-25e1-6c19">
+      <characteristics>
+        <characteristic name="Damage Capacity" typeId="d04e-5440-a507-67bd">3</characteristic>
+        <characteristic name="Shields" typeId="3309-b36b-a513-15bd"/>
+        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The unit is destroyed. All units within 5cm suffers a hit on 6+. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shadowsword" typeId="3511-2c68-62ed-e6eb" typeName="War Engine" hidden="false" id="e26c-2507-9b34-017c">
+      <characteristics>
+        <characteristic name="Damage Capacity" typeId="d04e-5440-a507-67bd">3</characteristic>
+        <characteristic name="Shields" typeId="3309-b36b-a513-15bd"/>
+        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The unit is destroyed. All units within 5cm suffers a hit on 6+. </characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Librarium - Imperium Weapons" id="95fc-d509-0f42-bf19" targetId="e473-96d7-a3bd-c71d"/>
+  </catalogueLinks>
 </catalogue>

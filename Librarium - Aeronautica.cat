@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="4c1c-1dac-1a0d-afd6" name="Librarium - Aeronautica" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Marauder Bomber" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="b0ef-ca70-ad5e-6c11">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AC</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">Bomber</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">n/a</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">n/a</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Thunderbolt Fighter" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="7f00-2100-0460-740f">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AC</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">Fighter-Bomber</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">6+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">n/a</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">n/a</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Emperor Class Battleship" typeId="c3f6-352a-f169-3ad1" typeName="Spacecraft" hidden="false" id="0f31-a1ff-6659-3ac1">
+      <characteristics>
+        <characteristic name="Arrive on Turn" typeId="8e81-527a-c849-2da6">2</characteristic>
+        <characteristic name="Abilities" typeId="53d7-016d-725e-d42f"/>
+      </characteristics>
+    </profile>
+    <profile name="Lunar Class Cruiser" typeId="c3f6-352a-f169-3ad1" typeName="Spacecraft" hidden="false" id="0d8c-35a3-8d95-3664">
+      <characteristics>
+        <characteristic name="Arrive on Turn" typeId="8e81-527a-c849-2da6">1</characteristic>
+        <characteristic name="Abilities" typeId="53d7-016d-725e-d42f"/>
+      </characteristics>
+    </profile>
+    <profile name="Emperor Class" typeId="1aab-b9e8-f3ed-fd0e" typeName="Orbital Bombardment" hidden="false" id="0607-fb0c-0f50-7cbc">
+      <characteristics>
+        <characteristic name="BP" typeId="dd4f-f3c1-884e-81c5">8</characteristic>
+        <characteristic name="Abilities" typeId="b4ec-b5cf-58b4-3811">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lunar Class" typeId="1aab-b9e8-f3ed-fd0e" typeName="Orbital Bombardment" hidden="false" id="3d2b-bb7e-3f79-74f8">
+      <characteristics>
+        <characteristic name="BP" typeId="dd4f-f3c1-884e-81c5">3</characteristic>
+        <characteristic name="Abilities" typeId="b4ec-b5cf-58b4-3811">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lunar Class" typeId="0803-c0d2-6f78-96e4" typeName="Pinpoint" hidden="false" id="8135-c5d1-061c-f383">
+      <characteristics>
+        <characteristic name="Firepower" typeId="11fd-e1aa-bd8a-48a8">MW 2+</characteristic>
+        <characteristic name="Abilities" typeId="d12a-0d9e-e457-e370">TK(d3)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="AC Twin Lascannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="5729-e318-4e8e-f85c">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">30cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AT 4+, AA 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">FxF</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="AC Twin Heavy Bolter Turret" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="6f76-b831-3d92-008e">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">15cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AA 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Emperor Class Battleship" hidden="false" id="cebb-70da-0992-fbd1">
+      <infoLinks>
+        <infoLink name="Emperor Class" id="84b8-45c3-1fb2-4dd0" hidden="false" type="profile" targetId="0607-fb0c-0f50-7cbc"/>
+        <infoLink name="Emperor Class Battleship" id="37f8-c48e-ff07-a28b" hidden="false" type="profile" targetId="0f31-a1ff-6659-3ac1"/>
+        <infoLink name="Slow to Arrive" id="8c69-659d-f020-995e" hidden="false" type="rule" targetId="fbbb-7398-b3d6-7ed1"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="3680-8ae3-3e82-721f" id="eeeb-eb2c-e31b-bb2c" primary="false" name="Spacecraft"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lunar Class Cruiser" hidden="false" id="8244-8b50-5fe1-8e1e">
+      <infoLinks>
+        <infoLink name="Lunar Class" id="f2e3-bd32-54e6-f64d" hidden="false" type="profile" targetId="3d2b-bb7e-3f79-74f8"/>
+        <infoLink name="Lunar Class Cruiser" id="8c5c-cbc0-e0ae-0075" hidden="false" type="profile" targetId="0d8c-35a3-8d95-3664"/>
+        <infoLink name="Lunar Class" id="b819-5f30-cdf4-de37" hidden="false" type="profile" targetId="8135-c5d1-061c-f383"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="3680-8ae3-3e82-721f" id="5b64-576d-55bb-1c22" primary="false" name="Spacecraft"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Marauder Bomber" hidden="false" id="c80e-0d23-b966-a3cd"/>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Slow to Arrive" id="fbbb-7398-b3d6-7ed1" hidden="false">
+      <description>May only arrive on the battlefield from turn 2 onwards</description>
+    </rule>
+  </sharedRules>
+</catalogue>

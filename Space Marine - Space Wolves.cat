@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="2da1-9477-9f3c-ea2b" name="Space Marines - Space Wolves" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Support Packs" id="6485-3ee8-42bb-5176" hidden="false">
+      <comment>max 1 per Core pack</comment>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="52a1-7567-6a2e-6a69"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="52a1-7567-6a2e-6a69">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="9e10-817f-51b9-8672" shared="true" roundUp="false" childName="Core Packs" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Core Packs" id="9e10-817f-51b9-8672" hidden="false"/>
+    <categoryEntry name="Elite Packs" id="2a97-b510-ab33-7155" hidden="false">
+      <comment>max 1 each per Hunting Pack formation</comment>
+    </categoryEntry>
+    <categoryEntry name="Hunting Pack" id="8eb2-d70b-0059-b5f3" hidden="false"/>
+    <categoryEntry name="Navy and Collegia Titanica Allies" id="d859-e9aa-806d-4ae0" hidden="false">
+      <comment>space wolves</comment>
+      <constraints>
+        <constraint type="max" value="33" field="e326-38bf-7cb2-f877" scope="roster" shared="true" id="f9fb-3ca7-fac3-7858" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Codex Astartes" id="9009-c8f3-72cf-a421" targetId="b96c-4bf2-b944-924f"/>
+    <catalogueLink type="catalogue" name="Collegia Titanica" id="5021-0775-9917-39fc" targetId="27bf-2e94-9e29-8b9c"/>
+    <catalogueLink type="catalogue" name="Imperium Weapons" id="c431-4981-56e0-cbb9" targetId="e473-96d7-a3bd-c71d"/>
+  </catalogueLinks>
+  <infoLinks>
+    <infoLink name="They Shall Know No Fear" id="693f-d4c3-3dbd-c0bc" hidden="false" type="rule" targetId="e939-a5fd-832f-074c" import="false"/>
+    <infoLink name="Pack Mentality" id="1207-d305-0bc4-02db" hidden="false" type="rule" targetId="0f32-d5b5-f8f7-6b5f"/>
+  </infoLinks>
+  <sharedProfiles>
+    <profile name="Great Wolf" typeId="d13a-b2a2-7b87-1437" typeName="Character" hidden="false" id="a00f-bb66-6afc-36ec">
+      <characteristics>
+        <characteristic name="Abilities" typeId="94d2-55c0-b43d-c05f">Supreme Commander, Extended Command, Invulnerable Save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wolf Lord" typeId="d13a-b2a2-7b87-1437" typeName="Character" hidden="false" id="67d2-ab9d-4896-893a">
+      <characteristics>
+        <characteristic name="Abilities" typeId="94d2-55c0-b43d-c05f">Commander, Extended Command, Invulnerable Save, Leader</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wolf Standard Bearer" typeId="d13a-b2a2-7b87-1437" typeName="Character" hidden="false" id="3dc3-00c5-ed7b-674b">
+      <characteristics>
+        <characteristic name="Abilities" typeId="94d2-55c0-b43d-c05f">Invulnerable Save, Leader</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blood Claws" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="f3e4-45c4-aaaf-ac4f">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Infiltrators</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fenrisian Wolves" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="c3c5-c4b4-8256-83ff">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">35cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">n/a</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Grey Hunters" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="1f83-275d-bfb5-4195">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Long Fangs" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="0158-b176-ca2e-3459">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">4+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"/>
+      </characteristics>
+    </profile>
+    <profile name="Skyclaws" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="b686-3f45-7cdb-99e5">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">30cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Jump Packs</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Swiftclaws" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="138a-8bf8-cbf4-bdca">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">35cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Mounted</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Thunderwolf Cavalry" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="c552-bb13-d697-62ce">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">25cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">3+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Invulnerable Save, Mounted, Walker. Counts as Terminators for the purpose of being transported.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wolf Guard Terminators" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="63dc-8fe8-4ad2-b0c1">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour, Thick Rear Armour. May be deployed in Drop Pods.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wolf Scouts" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="229a-4a96-e253-85cc">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">INF</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Infiltrators, Scout</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wulfen Dreadnought" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="0826-81e9-9734-c74b">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">15cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">3+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">3+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Fearless, Infiltrators, Walker</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Claws and Fangs" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="5689-6763-865d-c547">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1"/>
+      </characteristics>
+    </profile>
+    <profile name="Thunder Hammer and Storm Shield" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="9072-368e-db67-c219">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1">EA (+1), MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Helfrost Cannon" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="8fa3-e728-0c1f-b1a1">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3">Macro-weapon</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Great Wolf Claw" typeId="44a3-a559-e997-e821" typeName="Assault Weapons" hidden="false" id="12fd-15bb-a113-ed2d">
+      <characteristics>
+        <characteristic name="Abilities" typeId="6f05-5c06-8205-86d1">EA (+1), MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Leman Russ Exterminator" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="fc7a-9752-0018-ad27">
+      <characteristics>
+        <characteristic name="Type" typeId="9935-f446-c621-de6e">AV</characteristic>
+        <characteristic name="Movement" typeId="9a5a-d56a-600f-05db">20cm</characteristic>
+        <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
+        <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
+        <characteristic name="FF" typeId="4906-68a5-aebd-4073">4+</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Reinforced Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twin Autocannon" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="d782-a4e2-5be0-5b02">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">45cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+, AT 5+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Flamer" typeId="1bab-1f5d-14e6-a4e3" typeName="Small Arms" hidden="false" id="19d4-1c3b-f5d2-84e2">
+      <characteristics>
+        <characteristic name="Abilities" typeId="1829-9fe2-e1e4-16b3">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Flamer" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="1b34-cc1f-fe3e-ce1f">
+      <characteristics>
+        <characteristic name="Range" typeId="8e8e-fb57-4277-f99c">15cm</characteristic>
+        <characteristic name="Firepower" typeId="2a65-88b1-460c-3a66">AP 4+</characteristic>
+        <characteristic name="Abilities" typeId="ca5f-cad6-1910-b79b">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="Pack Mentality" id="0f32-d5b5-f8f7-6b5f" hidden="false">
+      <description>Space Wolves Packs counts as having one character with the Inspiring special rule when they initiate an assault where they have another formation with the Pack Mentality special rule in support, or when they perform a combined assault where more than one formation in the assault has Pack Mentality. You will never receive more than plus one Inspiring from Pack Mentality, even if you do both a combined assault and have formations in support, or if you have multiple formations in support.</description>
+    </rule>
+    <rule name="Strategy and Initiative Rating" id="2e13-d8eb-c73e-84d6" hidden="false">
+      <comment>space wolves</comment>
+      <description>Space Marine armies have a Strategy Rating of 5. All formations have an Initiative Rating of 1+.
+
+
+The They Shall Know No Fear special rule applies to all Space Wolves Packs and Aircraft formations. Pack Mentality applies to all Core and Elite Packs.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Dreadnoughts" id="53d3-b24f-1c51-7cc1" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Dreadnought" hidden="false" id="3d31-e344-85fc-3323" type="selectionEntry" targetId="8200-e1b8-49d0-a12f">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="02ce-57f9-6868-6136" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ee61-a170-6b11-2c26" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="50"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Dreadnought, Wulfen" hidden="false" id="c2c9-963e-873b-89b3" type="selectionEntry" targetId="cb98-09f5-362b-a773">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c08b-a548-a4a6-07e5" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fdd3-1cac-8502-5479" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8b2-985a-e4aa-91a7" includeChildSelections="false"/>
+      </constraints>
+      <comment>space wolves</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Fenrisian Wolves" id="a627-e443-1032-2a10" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="633f-610a-c4f6-7af2" type="selectionEntry" targetId="ff61-db52-3ddb-6ffd">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ce06-5b79-bc24-3caa" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="24aa-6d63-7cd7-591b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Exterminators" id="dee3-ae3c-5ada-7831" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Leman Russ Exterminator" hidden="false" id="5b7b-2c1e-74b9-eea5" type="selectionEntry" targetId="ef7d-1906-0ff0-2c1f">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6652-be84-cf25-67c6" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ce54-dfd8-c400-395a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="50"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wolf Lord" id="df50-aec3-035f-46d7" hidden="false" defaultSelectionEntryId="0240-0c0f-4925-a3b1">
+      <comment>free wolf lord, optional great wolf</comment>
+      <entryLinks>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="0240-0c0f-4925-a3b1" type="selectionEntry" targetId="5909-e7bc-dde8-e8a9"/>
+        <entryLink import="true" name="Great Wolf" hidden="false" id="be4a-e53e-a6d3-7093" type="selectionEntry" targetId="18ec-95ba-6db5-c399">
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="50"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="84c4-d970-7c5e-ba07" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2442-35b3-df6c-1430-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2442-35b3-df6c-1430-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wolf Lord" id="8f68-ae0e-f8dc-1644" hidden="false">
+      <comment>upgrade for lord-less formation</comment>
+      <entryLinks>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="f5dd-dde9-b570-52f8" type="selectionEntry" targetId="5909-e7bc-dde8-e8a9">
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79b5-2f24-2a8f-36b6" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="018d-2c4f-addb-6f6c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Dreadnought, Wulfen" hidden="false" id="cb98-09f5-362b-a773">
+      <infoLinks>
+        <infoLink name="Wulfen Dreadnought" id="6c00-d0dd-b4fd-b740" hidden="false" type="profile" targetId="0826-81e9-9734-c74b"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Helfrost Cannon, Great Wolf Claw" hidden="false" id="a148-b173-c09e-a604">
+          <infoLinks>
+            <infoLink name="Helfrost Cannon" id="96d4-fe06-37aa-ed69" hidden="false" type="profile" targetId="8fa3-e728-0c1f-b1a1"/>
+            <infoLink name="Great Wolf Claw" id="c915-ec82-b557-ab9f" hidden="false" type="profile" targetId="12fd-15bb-a113-ed2d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="500d-786a-7abb-8fbe-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="500d-786a-7abb-8fbe-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fenrisian Wolves" hidden="false" id="ff61-db52-3ddb-6ffd">
+      <infoLinks>
+        <infoLink name="Fenrisian Wolves" id="b2e8-62c6-9fa0-93a1" hidden="false" type="profile" targetId="c3c5-c4b4-8256-83ff"/>
+        <infoLink name="Claws and Fangs" id="dc2e-6d9c-7495-1e0c" hidden="false" type="profile" targetId="5689-6763-865d-c547"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Great Wolf" hidden="false" id="18ec-95ba-6db5-c399" subType="crew">
+      <infoLinks>
+        <infoLink name="Great Wolf" id="d121-de8b-b610-c3ef" hidden="false" type="profile" targetId="a00f-bb66-6afc-36ec"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Power Weapon" hidden="false" id="0cdf-b929-98b1-7df6" type="selectionEntry" targetId="0ed8-a7e7-c553-852e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wolf Lord" hidden="false" id="5909-e7bc-dde8-e8a9" subType="crew">
+      <infoLinks>
+        <infoLink name="Wolf Lord" id="3e05-8683-b4e2-a7b5" hidden="false" type="profile" targetId="67d2-ab9d-4896-893a"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Power Weapon" hidden="false" id="1be9-1b2e-6bfb-b042" type="selectionEntry" targetId="0ed8-a7e7-c553-852e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wolf Standard Bearer" hidden="false" id="467c-f56e-76e2-74a4" subType="crew">
+      <infoLinks>
+        <infoLink name="Wolf Standard Bearer" id="95c3-004b-9236-3419" hidden="false" type="profile" targetId="3dc3-00c5-ed7b-674b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Blood Claws" hidden="false" id="1389-92b5-4139-337f">
+      <infoLinks>
+        <infoLink name="Blood Claws" id="63b5-774a-906f-3edd" hidden="false" type="profile" targetId="f3e4-45c4-aaaf-ac4f"/>
+        <infoLink name="Bolt Pistol" id="bc64-3997-6159-2206" hidden="false" type="profile" targetId="dfdd-3353-16f0-1244"/>
+        <infoLink name="Chainswords" id="9977-7237-9761-9a62" hidden="false" type="profile" targetId="5a7a-dabe-e325-d89a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grey Hunters" hidden="false" id="72d9-e8b4-f6b7-ed08">
+      <infoLinks>
+        <infoLink name="Grey Hunters" id="923b-b67d-8fe4-550f" hidden="false" type="profile" targetId="1f83-275d-bfb5-4195"/>
+        <infoLink name="Bolters" id="ffc2-a768-437e-5793" hidden="false" type="profile" targetId="e3ca-c01b-30f7-cd2b"/>
+        <infoLink name="Chainswords" id="aa7c-dc2a-b47a-47fd" hidden="false" type="profile" targetId="5a7a-dabe-e325-d89a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Long Fangs" hidden="false" id="4030-a88e-b96d-326e">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2x Lascannon, Heavy Bolter" hidden="false" id="0f00-7054-036e-2b8e">
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="a82d-1794-2a73-67a1" hidden="false" type="profile" targetId="ae1d-3a39-339c-8534"/>
+            <infoLink name="Lascannon" id="92c5-0b4a-bd9c-19d0" hidden="false" type="profile" targetId="d3ff-d7f2-63e1-ea46"/>
+            <infoLink name="Lascannon" id="5b63-d830-db76-88cb" hidden="false" type="profile" targetId="d3ff-d7f2-63e1-ea46"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dff-84e5-d765-9a9d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dff-84e5-d765-9a9d-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Long Fangs" id="c9d8-5540-ff25-78dd" hidden="false" type="profile" targetId="0158-b176-ca2e-3459"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sky Claws" hidden="false" id="3857-9485-16cc-b49d">
+      <infoLinks>
+        <infoLink name="Skyclaws" id="6266-b2e3-cfce-d99d" hidden="false" type="profile" targetId="b686-3f45-7cdb-99e5"/>
+        <infoLink name="Bolt Pistol" id="a0c3-e013-10c5-4194" hidden="false" type="profile" targetId="dfdd-3353-16f0-1244"/>
+        <infoLink name="Chainswords" id="74fe-2318-6662-8979" hidden="false" type="profile" targetId="5a7a-dabe-e325-d89a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Swiftclaws" hidden="false" id="cd13-884f-7191-a803">
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="32e2-6a02-3d64-b47b" hidden="false" type="profile" targetId="dfdd-3353-16f0-1244"/>
+        <infoLink name="Chainswords" id="667c-b097-f02b-6209" hidden="false" type="profile" targetId="5a7a-dabe-e325-d89a"/>
+        <infoLink name="Swiftclaws" id="8b49-f29e-7984-c0dc" hidden="false" type="profile" targetId="138a-8bf8-cbf4-bdca"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Thunderwolf Cavalry" hidden="false" id="b5db-aeab-1845-d6b6">
+      <infoLinks>
+        <infoLink name="Thunderwolf Cavalry" id="4f34-413c-7b21-ab70" hidden="false" type="profile" targetId="c552-bb13-d697-62ce"/>
+        <infoLink name="Thunder Hammer and Storm Shield" id="37f7-f3ef-9e0c-c95c" hidden="false" type="profile" targetId="9072-368e-db67-c219"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wolf Guard Terminators" hidden="false" id="1054-539b-9695-10aa">
+      <infoLinks>
+        <infoLink name="Wolf Guard Terminators" id="e82f-c1e2-26d7-e2e4" hidden="false" type="profile" targetId="63dc-8fe8-4ad2-b0c1"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2x Assault Cannon" hidden="false" id="052a-6904-eef2-44f7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0df9-2167-45fa-d348-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0df9-2167-45fa-d348-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Assault Cannon" id="b477-aa8d-745f-833c" hidden="false" type="profile" targetId="2393-559f-d7ff-615f"/>
+            <infoLink name="Assault Cannon" id="99bd-d704-9ea3-dd70" hidden="false" type="profile" targetId="2393-559f-d7ff-615f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Power Weapon" hidden="false" id="391b-83ca-e13a-b1af" type="selectionEntry" targetId="0ed8-a7e7-c553-852e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wolf Scouts" hidden="false" id="63e9-27c5-effa-b3ab">
+      <infoLinks>
+        <infoLink name="Wolf Scouts" id="20b2-39ca-6eee-4fb0" hidden="false" type="profile" targetId="229a-4a96-e253-85cc"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="c42b-f7a9-9d7e-0181">
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="d8ff-3722-d84a-6dfe" hidden="false" type="profile" targetId="ae1d-3a39-339c-8534"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5928-609f-d7d7-2024-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5928-609f-d7d7-2024-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Leman Russ Exterminator" hidden="false" id="ef7d-1906-0ff0-2c1f">
+      <comment>bespoke; too lazy to have imported</comment>
+      <infoLinks>
+        <infoLink name="Leman Russ Exterminator" id="51dc-a9de-44a9-970a" hidden="false" type="profile" targetId="fc7a-9752-0018-ad27"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin Autocannon, Heavy Flamer, 2x Heavy Bolter" hidden="false" id="8832-552f-f927-1ed2">
+          <infoLinks>
+            <infoLink name="Heavy Flamer" id="5977-cb4a-b671-067b" hidden="false" type="profile" targetId="0455-c4bc-6a25-0a72"/>
+            <infoLink name="Heavy Flamer" id="bfab-9363-ad45-672a" hidden="false" type="profile" targetId="a988-e259-abd0-9aff"/>
+            <infoLink name="Twin Autocannon" id="6ce9-0c16-672e-f717" hidden="false" type="profile" targetId="d782-a4e2-5be0-5b02"/>
+            <infoLink name="Heavy Bolter" id="30b6-5cff-d1d8-80ba" hidden="false" type="profile" targetId="ae1d-3a39-339c-8534"/>
+            <infoLink name="Heavy Bolter" id="7614-f1b2-bb3b-75b3" hidden="false" type="profile" targetId="ae1d-3a39-339c-8534"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c182-c720-1904-1d98-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c182-c720-1904-1d98-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hunting Pack" hidden="false" id="4d90-0b8c-78a9-fb2a">
+      <entryLinks>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="1852-f090-3d46-b9c4" type="selectionEntryGroup" targetId="df50-aec3-035f-46d7" sortIndex="2"/>
+        <entryLink import="true" name="Wolf Standard Bearer" hidden="false" id="e61b-d98e-6436-430e" type="selectionEntry" targetId="467c-f56e-76e2-74a4" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc29-b517-603d-31b7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc29-b517-603d-31b7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Grey Hunters" hidden="false" id="0456-0c00-386d-7e35" type="selectionEntry" targetId="72d9-e8b4-f6b7-ed08" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4e9a-8004-7537-4e6b-min" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4e9a-8004-7537-4e6b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Anti-Air" hidden="false" id="5ff6-2adf-667d-6e5a" type="selectionEntryGroup" targetId="492a-c1d4-baa4-65bb"/>
+        <entryLink import="true" name="Dreadnoughts" hidden="false" id="5b51-5ae4-e892-a53b" type="selectionEntryGroup" targetId="53d3-b24f-1c51-7cc1"/>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="79a8-9230-dc16-8ce5" type="selectionEntryGroup" targetId="a627-e443-1032-2a10"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Transport" id="1c91-6fad-e1d6-eec6" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Free Transport" hidden="false" id="002c-e32f-ff2e-a967" type="selectionEntryGroup" targetId="53fb-9b89-21c3-c314"/>
+            <entryLink import="true" name="Land Raiders" hidden="false" id="76ef-9883-d9b2-35d6" type="selectionEntryGroup" targetId="9005-bb4b-6f72-664a"/>
+            <entryLink import="true" name="Razorbacks" hidden="false" id="d410-2581-fe49-4213" type="selectionEntryGroup" targetId="daaa-9d68-b1e8-4986"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Blood Claw Assault Pack" hidden="false" id="eb82-7ee0-6357-95d6">
+      <entryLinks>
+        <entryLink import="true" name="Blood Claws" hidden="false" id="b846-6b27-014e-f66c" type="selectionEntry" targetId="1389-92b5-4139-337f" sortIndex="1"/>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="8ca1-4b96-c0c6-c315" type="selectionEntryGroup" targetId="8f68-ae0e-f8dc-1644" sortIndex="3"/>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="e14d-8ab9-1979-d5a4" type="selectionEntryGroup" targetId="a627-e443-1032-2a10"/>
+        <entryLink import="true" name="Dreadnoughts" hidden="false" id="14d9-9c08-d14a-35e0" type="selectionEntryGroup" targetId="53d3-b24f-1c51-7cc1"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Transport" id="1fda-f20d-5eff-ee24" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Transports" hidden="false" id="7548-c3d0-8634-c849">
+              <costs>
+                <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ba-dde3-e7a4-ab19" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cefb-14ab-2401-7347" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sky Claw Assault Pack" hidden="false" id="6ccd-477c-ffdc-038a">
+      <entryLinks>
+        <entryLink import="true" name="Sky Claws" hidden="false" id="a30e-7f64-885d-85d3" type="selectionEntry" targetId="3857-9485-16cc-b49d" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4b0c-f459-8871-2125-min" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4b0c-f459-8871-2125-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="d528-5390-edd8-96ec" type="selectionEntryGroup" targetId="8f68-ae0e-f8dc-1644" sortIndex="2"/>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="f0d0-f143-2ab7-d7e6" type="selectionEntryGroup" targetId="a627-e443-1032-2a10" sortIndex="3"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Swift Claw Bike Pack" hidden="false" id="34a0-ac05-ca1d-9472">
+      <entryLinks>
+        <entryLink import="true" name="Swiftclaws" hidden="false" id="ac1c-89cc-0711-5c4c" type="selectionEntry" targetId="cd13-884f-7191-a803" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="e168-d2ad-68a1-3b79-min" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e168-d2ad-68a1-3b79-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="4e5b-fc99-61e5-fa44" type="selectionEntryGroup" targetId="8f68-ae0e-f8dc-1644" sortIndex="2"/>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="7183-416f-15f0-98d8" type="selectionEntryGroup" targetId="a627-e443-1032-2a10" sortIndex="3"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Long Fangs Pack" hidden="false" id="ebef-19cc-8d69-1d13">
+      <entryLinks>
+        <entryLink import="true" name="Long Fangs" hidden="false" id="a360-5ef6-4347-3c79" type="selectionEntry" targetId="4030-a88e-b96d-326e" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f29e-9a4e-eb8d-4e2f-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f29e-9a4e-eb8d-4e2f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="6eae-d7e2-b012-71a9" type="selectionEntryGroup" targetId="df50-aec3-035f-46d7" sortIndex="2"/>
+        <entryLink import="true" name="Exterminators" hidden="false" id="79fd-5ada-3abb-c1e6" type="selectionEntryGroup" targetId="dee3-ae3c-5ada-7831"/>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="c671-12e9-8bbf-29c0" type="selectionEntryGroup" targetId="a627-e443-1032-2a10"/>
+        <entryLink import="true" name="Dreadnoughts" hidden="false" id="a777-9d01-6bbb-f956" type="selectionEntryGroup" targetId="53d3-b24f-1c51-7cc1"/>
+        <entryLink import="true" name="Anti-Air" hidden="false" id="74e2-ddd8-0e1e-20b3" type="selectionEntryGroup" targetId="492a-c1d4-baa4-65bb"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Heavy Transports" id="618f-3692-4a9e-ab78" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Razorbacks" hidden="false" id="dbfc-2f20-2b42-72db" type="selectionEntryGroup" targetId="daaa-9d68-b1e8-4986"/>
+            <entryLink import="true" name="Land Raiders" hidden="false" id="0c91-f515-a84c-80fc" type="selectionEntryGroup" targetId="9005-bb4b-6f72-664a">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb19-1750-f8aa-3980" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a7a6-94c3-6da4-d5bc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="788b-b89b-45e4-3b54" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2cef-9369-67ff-bf65" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="2cef-9369-67ff-bf65">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="0c91-f515-a84c-80fc" shared="true" roundUp="false" childName="Land Raiders"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thunderwolf Cavalry" hidden="false" id="de0d-6521-07c0-28da">
+      <entryLinks>
+        <entryLink import="true" name="Thunderwolf Cavalry" hidden="false" id="e21b-a792-1348-f6e2" type="selectionEntry" targetId="b5db-aeab-1845-d6b6" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1a61-73a8-054e-2d1f-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1a61-73a8-054e-2d1f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="9702-cd7f-edae-7de8" type="selectionEntryGroup" targetId="a627-e443-1032-2a10"/>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="476d-bfce-34a1-24ec" type="selectionEntryGroup" targetId="df50-aec3-035f-46d7" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wolf Guard Terminators" hidden="false" id="b215-d1cc-62d5-6d45">
+      <entryLinks>
+        <entryLink import="true" name="Wolf Guard Terminators" hidden="false" id="67ed-4380-b8f6-d447" type="selectionEntry" targetId="1054-539b-9695-10aa" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5364-c877-f20f-c5ea-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5364-c877-f20f-c5ea-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Dreadnoughts" hidden="false" id="9922-8091-e392-fdaa" type="selectionEntryGroup" targetId="53d3-b24f-1c51-7cc1"/>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="5bc6-58d2-c8d4-97b4" type="selectionEntryGroup" targetId="df50-aec3-035f-46d7" sortIndex="2"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Free Transport" id="7dbf-fb51-3b17-b61e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Drop Pods" hidden="false" id="0a08-2d9a-91c5-66d6" type="selectionEntry" targetId="ae22-4cf3-d717-3e46"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="06da-39f5-f887-ee47" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fff-cd6a-903c-dce5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wolf Scouts" hidden="false" id="98dc-6feb-beb9-6a44">
+      <entryLinks>
+        <entryLink import="true" name="Wolf Scouts" hidden="false" id="9f3a-7c60-9a0a-ff6a" type="selectionEntry" targetId="63e9-27c5-effa-b3ab" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="6e52-f6b7-304f-d9fc-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6e52-f6b7-304f-d9fc-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fenrisian Wolves" hidden="false" id="0262-4cfa-6d14-dda2" type="selectionEntryGroup" targetId="a627-e443-1032-2a10"/>
+        <entryLink import="true" name="Wolf Lord" hidden="false" id="5c45-786a-1dc3-fb6e" type="selectionEntryGroup" targetId="8f68-ae0e-f8dc-1644" sortIndex="3"/>
+        <entryLink import="true" name="Free Transport" hidden="false" id="d8ae-ede9-d785-d574" type="selectionEntryGroup" targetId="53fb-9b89-21c3-c314" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Hunting Pack" hidden="false" id="1a64-7794-eb11-bbee" type="selectionEntry" targetId="4d90-0b8c-78a9-fb2a">
+      <categoryLinks>
+        <categoryLink targetId="8eb2-d70b-0059-b5f3" id="6482-e4ac-ec2b-2846" primary="false" name="Hunting Pack"/>
+        <categoryLink targetId="9e10-817f-51b9-8672" id="eddc-739f-5799-2a7e" primary="true" name="Core Packs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="275"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Sky Claw Assault Pack" hidden="false" id="1cc4-ce8f-4b52-bd8e" type="selectionEntry" targetId="6ccd-477c-ffdc-038a">
+      <categoryLinks>
+        <categoryLink targetId="9e10-817f-51b9-8672" id="3fc0-85a6-e87c-50f1" primary="true" name="Core Packs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="225"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Blood Claw Assault Pack" hidden="false" id="d717-cb4a-8583-21c0" type="selectionEntry" targetId="eb82-7ee0-6357-95d6">
+      <categoryLinks>
+        <categoryLink targetId="9e10-817f-51b9-8672" id="2fcb-0ffb-1b29-b875" primary="true" name="Core Packs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="225"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Swift Claw Bike Pack" hidden="false" id="c70a-4a93-f69c-a17c" type="selectionEntry" targetId="34a0-ac05-ca1d-9472">
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="200"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9e10-817f-51b9-8672" id="4ba6-d4d2-a790-decc" primary="true" name="Core Packs"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Long Fangs Pack" hidden="false" id="8621-0599-c1f9-2c6e" type="selectionEntry" targetId="ebef-19cc-8d69-1d13">
+      <categoryLinks>
+        <categoryLink targetId="2a97-b510-ab33-7155" id="e1ba-08a4-5919-43e7" primary="true" name="Elite Packs"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d18b-1a58-a3cd-2197"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="d18b-1a58-a3cd-2197">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8eb2-d70b-0059-b5f3" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Hunting Pack"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="275"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Thunderwolf Cavalry" hidden="false" id="adbc-b915-a02c-a377" type="selectionEntry" targetId="de0d-6521-07c0-28da">
+      <categoryLinks>
+        <categoryLink name="Elite Packs" hidden="false" id="1dd6-8c58-9f19-6bb8" targetId="2a97-b510-ab33-7155" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5728-ac8d-2633-bdce"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="5728-ac8d-2633-bdce">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8eb2-d70b-0059-b5f3" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Hunting Pack"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="275"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Wolf Guard Terminators" hidden="false" id="e8c4-16c6-4dfb-c244" type="selectionEntry" targetId="b215-d1cc-62d5-6d45">
+      <categoryLinks>
+        <categoryLink name="Elite Packs" hidden="false" id="021c-b36f-8014-0ec4" targetId="2a97-b510-ab33-7155" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0e72-983d-615a-1318"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="0e72-983d-615a-1318">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8eb2-d70b-0059-b5f3" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Hunting Pack"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="375"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Wolf Scouts" hidden="false" id="5110-047f-15d4-ee85" type="selectionEntry" targetId="98dc-6feb-beb9-6a44">
+      <categoryLinks>
+        <categoryLink name="Elite Packs" hidden="false" id="1219-2873-9236-6a33" targetId="2a97-b510-ab33-7155" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f9d7-bfd8-869f-24db"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f9d7-bfd8-869f-24db">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8eb2-d70b-0059-b5f3" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Hunting Pack"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="175"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Land Raiders" hidden="false" id="8449-6279-c7ca-2bf3" type="selectionEntry" targetId="12f4-bfff-b78c-73a6">
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="275"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6485-3ee8-42bb-5176" id="d489-0ca4-ca2a-9318" primary="true" name="Support Packs"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeders" hidden="false" id="c847-5f00-a6fb-d686" type="selectionEntry" targetId="2a67-c992-0ce8-8525">
+      <categoryLinks>
+        <categoryLink targetId="6485-3ee8-42bb-5176" id="c4b7-4e1b-67a7-dc9a" primary="true" name="Support Packs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="200"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Predators" hidden="false" id="527e-65cb-ec1a-5a01" type="selectionEntry" targetId="64c4-526d-1bd7-5b96">
+      <categoryLinks>
+        <categoryLink targetId="6485-3ee8-42bb-5176" id="0606-9354-6c21-4e45" primary="true" name="Support Packs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="250"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Whirlwinds" hidden="false" id="5a9b-4de7-48a3-1f4d" type="selectionEntry" targetId="9af0-8c08-db11-3b44">
+      <categoryLinks>
+        <categoryLink targetId="6485-3ee8-42bb-5176" id="81fd-1a21-d855-4020" primary="true" name="Support Packs"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="275"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Vindicators" hidden="false" id="b23a-aaa6-d671-75c3" type="selectionEntry" targetId="6329-3c69-c4f9-c6d3">
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="225"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6485-3ee8-42bb-5176" id="533d-bedf-f75c-4b6f" primary="true" name="Support Packs"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warhounds" hidden="false" id="6d0a-4b93-8a20-996a" type="selectionEntry" targetId="0519-c302-a6f5-8bf5">
+      <categoryLinks>
+        <categoryLink targetId="d859-e9aa-806d-4ae0" id="7982-b449-8dd2-86c6" primary="true" name="Navy and Collegia Titanica Allies"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <forceEntries>
+    <forceEntry name="Space Wolves" id="6a63-5a82-f115-f169" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Core Packs" hidden="false" id="9619-76d4-e958-f870" targetId="9e10-817f-51b9-8672" tracked="true"/>
+        <categoryLink name="Elite Packs" hidden="false" id="b5d1-73a7-6d68-1ab9" targetId="2a97-b510-ab33-7155" tracked="true"/>
+        <categoryLink name="Support Packs" hidden="false" id="1cc5-57f6-58e9-d9e7" targetId="6485-3ee8-42bb-5176" tracked="true"/>
+        <categoryLink name="Navy and Collegia Titanica Allies" hidden="false" id="eade-b40b-bc04-fee9" targetId="d859-e9aa-806d-4ae0" tracked="true"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
