@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="577a-2f18-0d58-7a37" name="Xenos - T&apos;au Empire" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="577a-2f18-0d58-7a37" name="Xenos - T&apos;au Empire" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Coordinated Fire" id="259f-b137-ceea-ef6c" hidden="false">
       <description>A formation that contains at least one unit with Coordinated Fire can order up to two other un-broken formations within 15cm that have not taken an action this turn to follow their own formation when they take an Advance, Double or Sustained Fire action.
@@ -35,7 +35,7 @@ This bonus for shooting at a Marked enemy may not be used when making Anti-Aircr
       <description>Tau Deflector Shields work like an Invulnerable Save in all respects, except it is 5+ instead of 6+</description>
     </rule>
     <rule name="Strategy Rating and Initiative" id="db68-b239-1360-75f4" hidden="false">
-      <description>Tau armies have a Strategy Rating of 3. XV8 Crisis Battlesuit, XV10 Heavy Battlesuit Cadres, KV128 Stormsurge, and KX139 Supremacy Armour have an Initiative Rating of 1+. All other formations have an Initiative Rating of 2+. </description>
+      <description>Tau armies have a Strategy Rating of 3. XV8 Crisis Battlesuit, XV10 Heavy Battlesuit Cadres, KV128 Stormsurge, and KX139 Supremacy Armour have an Initiative Rating of 1+. All other formations have an Initiative Rating of 2+.</description>
       <comment>vior&apos;la</comment>
     </rule>
     <rule name="Ethereal" id="26d0-7bed-ad25-c887" hidden="false">
@@ -110,7 +110,7 @@ This bonus for shooting at a Marked enemy may not be used when making Anti-Aircr
         <characteristic name="Armour" typeId="3658-a380-5564-f0af">3+</characteristic>
         <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">5+</characteristic>
         <characteristic name="FF" typeId="4906-68a5-aebd-4073">5+</characteristic>
-        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"> Invulnerable Save, Tau Jet Packs</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Invulnerable Save, Tau Jet Packs</characteristic>
       </characteristics>
     </profile>
     <profile name="Shield Drones" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="bf19-1f70-3756-a9a2">
@@ -200,7 +200,7 @@ This bonus for shooting at a Marked enemy may not be used when making Anti-Aircr
       <characteristics>
         <characteristic name="Damage Capacity" typeId="d04e-5440-a507-67bd">5</characteristic>
         <characteristic name="Shields" typeId="3309-b36b-a513-15bd">Deflector</characteristic>
-        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Tau Deflector Shield is knocked offline and may not be used for the remainder of the game. Subsequent critical hits cause an additional point of damage. </characteristic>
+        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Tau Deflector Shield is knocked offline and may not be used for the remainder of the game. Subsequent critical hits cause an additional point of damage.</characteristic>
       </characteristics>
     </profile>
     <profile name="KV128 Stormsurge Ballistic Suit" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="9ba7-6488-647a-279b">
@@ -315,7 +315,7 @@ This bonus for shooting at a Marked enemy may not be used when making Anti-Aircr
         <characteristic name="Armour" typeId="3658-a380-5564-f0af">5+</characteristic>
         <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
         <characteristic name="FF" typeId="4906-68a5-aebd-4073">6+</characteristic>
-        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"> Coordinated Fire, Markerlights, Scout, Skimmer</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Coordinated Fire, Markerlights, Scout, Skimmer</characteristic>
       </characteristics>
     </profile>
     <profile name="Piranha" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="dfe7-5db0-f9b4-7f32">
@@ -371,7 +371,7 @@ This bonus for shooting at a Marked enemy may not be used when making Anti-Aircr
       <characteristics>
         <characteristic name="Capacity" typeId="61b0-a4ea-9433-14e9">12 Infantry/Suits, 8 Skimmers</characteristic>
         <characteristic name="Can Transport:" typeId="c160-32b7-e87e-6bac">Infantry/Suits: Fire Warriors, Pathfinders, XV15 Stealth Battlesuits, XV25 Stealth Battlesuits, Gun Drones, Kroot Warriors, Kroot Master Shapers and Kroot Hounds. Krootox, XV8 Crisis, XV9-04 Hazard, XV88 Broadside and XV95 Ghostkeel Battlesuits counts as two units each
-Skimmers: Piranha and Tetra. Devilfish, Hammerhead and Sky Ray counts as two units each. </characteristic>
+Skimmers: Piranha and Tetra. Devilfish, Hammerhead and Sky Ray counts as two units each.</characteristic>
       </characteristics>
     </profile>
     <profile name="Tiger Shark Bomber" typeId="0a48-73e7-5d18-a84d" typeName="Transport" hidden="false" id="d127-ab5c-7bf5-0580">
@@ -404,7 +404,7 @@ Skimmers: Piranha and Tetra. Devilfish, Hammerhead and Sky Ray counts as two uni
       <characteristics>
         <characteristic name="Damage Capacity" typeId="d04e-5440-a507-67bd">1</characteristic>
         <characteristic name="Shields" typeId="3309-b36b-a513-15bd"/>
-        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Orca and all units being transported are destroyed. </characteristic>
+        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Orca and all units being transported are destroyed.</characteristic>
       </characteristics>
     </profile>
     <profile name="Orca" typeId="0a48-73e7-5d18-a84d" typeName="Transport" hidden="false" id="9840-dc4f-69d7-203d">
@@ -419,7 +419,7 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
     <profile name="Protector Class Cruiser" typeId="0a48-73e7-5d18-a84d" typeName="Transport" hidden="false" id="f63a-ccb6-5cf7-ac79">
       <characteristics>
         <characteristic name="Capacity" typeId="61b0-a4ea-9433-14e9">6</characteristic>
-        <characteristic name="Can Transport:" typeId="c160-32b7-e87e-6bac">Orca, Manta. Mantas count as thee units each. </characteristic>
+        <characteristic name="Can Transport:" typeId="c160-32b7-e87e-6bac">Orca, Manta. Mantas count as thee units each.</characteristic>
       </characteristics>
     </profile>
     <profile name="Protector Class Cruiser" typeId="c3f6-352a-f169-3ad1" typeName="Spacecraft" hidden="false" id="54e8-0819-1745-0649">
@@ -431,7 +431,7 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
     <profile name="Custodian Class Battleship" typeId="0a48-73e7-5d18-a84d" typeName="Transport" hidden="false" id="00b1-a61b-e009-df0b">
       <characteristics>
         <characteristic name="Capacity" typeId="61b0-a4ea-9433-14e9">18</characteristic>
-        <characteristic name="Can Transport:" typeId="c160-32b7-e87e-6bac">Orca, Manta. Mantas count as thee units each. </characteristic>
+        <characteristic name="Can Transport:" typeId="c160-32b7-e87e-6bac">Orca, Manta. Mantas count as thee units each.</characteristic>
       </characteristics>
     </profile>
     <profile name="Custodian Class Battleship" typeId="c3f6-352a-f169-3ad1" typeName="Spacecraft" hidden="false" id="491e-14e7-f973-decc">
@@ -686,7 +686,7 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
       <characteristics>
         <characteristic name="Damage Capacity" typeId="d04e-5440-a507-67bd">6</characteristic>
         <characteristic name="Shields" typeId="3309-b36b-a513-15bd">Deflector</characteristic>
-        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Tau Deflector Shield is knocked offline and may not be used for the remainder of the game. Subsequent critical hits cause an additional point of damage. </characteristic>
+        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Tau Deflector Shield is knocked offline and may not be used for the remainder of the game. Subsequent critical hits cause an additional point of damage.</characteristic>
       </characteristics>
     </profile>
     <profile name="Twin Missile Pod" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="36eb-e856-d042-ecef">
@@ -869,7 +869,7 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Shas&apos;el" hidden="false" id="e8f8-37fa-0c55-1274" subType="crew">
+    <selectionEntry type="model" import="true" name="Shas&apos;el" hidden="false" id="e8f8-37fa-0c55-1274" subType="crew" defaultAmount="1">
       <infoLinks>
         <infoLink name="Shas&apos;el" id="d7e2-646a-f60e-dd5f" hidden="false" type="profile" targetId="e0e2-7fea-6562-cfdc"/>
       </infoLinks>
@@ -880,6 +880,10 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe92-f271-8719-a533-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe92-f271-8719-a533-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shas&apos;o" hidden="false" id="1ef3-e95d-d325-4e90" subType="crew">
       <infoLinks>
@@ -1153,7 +1157,12 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c02-d777-adf8-24f0-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Seeker Missiles" hidden="false" id="e2b9-8dd1-ebc4-8310" type="selectionEntry" targetId="80a5-ce2a-9f45-1c80"/>
+        <entryLink import="true" name="Seeker Missiles" hidden="false" id="e2b9-8dd1-ebc4-8310" type="selectionEntry" targetId="80a5-ce2a-9f45-1c80">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ad3-fa45-1f6e-0ba7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ad3-fa45-1f6e-0ba7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Devilfish" id="3807-fdcb-eb04-b2e6" hidden="false" type="profile" targetId="3d9a-8e6c-c8f4-1831"/>
@@ -1283,6 +1292,9 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
           </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Sky Ray" id="711b-539e-6fa4-2cac" hidden="false" type="profile" targetId="45eb-7592-435b-376b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Manta" hidden="false" id="3689-88cb-578a-c990">
       <selectionEntries>
@@ -1354,19 +1366,19 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
         <infoLink name="Tiger Shark Bomber" id="b9f6-5a46-4c99-b51c" hidden="false" type="profile" targetId="3b2b-d3a0-ad17-0fc3"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="AC Twin Burst Cannon" hidden="false" id="db03-5edc-83e6-00e4" type="selectionEntry" targetId="9e3e-20bc-bee7-32c4">
+        <entryLink import="true" name="Twin Burst Cannon" hidden="false" id="db03-5edc-83e6-00e4" type="selectionEntry" targetId="9e3e-20bc-bee7-32c4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f466-dcc5-57ad-218b-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f466-dcc5-57ad-218b-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="AC Twin Missile Pod" hidden="false" id="bec2-295a-5d6f-e10b" type="selectionEntry" targetId="3647-1dce-a586-4bb6">
+        <entryLink import="true" name="Twin Missile Pod" hidden="false" id="bec2-295a-5d6f-e10b" type="selectionEntry" targetId="3647-1dce-a586-4bb6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9843-3188-e78c-e05f-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9843-3188-e78c-e05f-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="AC Seeker Missiles" hidden="false" id="deb5-253e-69b9-5c03" type="selectionEntry" targetId="823e-fa62-cfa1-b91d">
+        <entryLink import="true" name="Seeker Missiles" hidden="false" id="deb5-253e-69b9-5c03" type="selectionEntry" targetId="823e-fa62-cfa1-b91d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6056-0485-0138-5d6a-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6056-0485-0138-5d6a-max" includeChildSelections="false"/>
@@ -1463,13 +1475,13 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
         <infoLink name="Tiger Shark Bomber" id="9137-5749-f5d9-3247" hidden="false" type="profile" targetId="d127-ab5c-7bf5-0580"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="AC Seeker Missiles" hidden="false" id="521c-9b87-b8b8-1f3d" type="selectionEntry" targetId="823e-fa62-cfa1-b91d">
+        <entryLink import="true" name="Seeker Missiles" hidden="false" id="521c-9b87-b8b8-1f3d" type="selectionEntry" targetId="823e-fa62-cfa1-b91d">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3932-000c-8f34-6f34-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3932-000c-8f34-6f34-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="AC Twin Missile Pod" hidden="false" id="ed88-76c5-0601-2974" type="selectionEntry" targetId="3647-1dce-a586-4bb6">
+        <entryLink import="true" name="Twin Missile Pod" hidden="false" id="ed88-76c5-0601-2974" type="selectionEntry" targetId="3647-1dce-a586-4bb6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a87-4321-599a-3d10-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a87-4321-599a-3d10-max" includeChildSelections="false"/>
@@ -1491,7 +1503,7 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
     <selectionEntry type="upgrade" import="true" name="Bonded Team" hidden="false" id="6cd8-20e1-898d-6a7c">
       <rules>
         <rule name="Bonded Team" id="8734-4a83-8bf4-164b" hidden="false">
-          <description>This formation has Leader (this special ability is not added to any one specific unit) </description>
+          <description>This formation has Leader (this special ability is not added to any one specific unit)</description>
         </rule>
       </rules>
       <costs>
@@ -1500,11 +1512,10 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="T&apos;au Spacecraft" hidden="false" id="0015-5eac-0217-22f1">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Spacecraft" id="11a4-dd12-eb51-0cb4" hidden="false" flatten="true">
+        <selectionEntryGroup name="Spacecraft" id="11a4-dd12-eb51-0cb4" hidden="false" flatten="true" defaultSelectionEntryId="10d9-5dfd-8711-a898">
           <entryLinks>
             <entryLink import="true" name="Custodian Class Battleship" hidden="false" id="2185-b91f-a2cd-06cf" type="selectionEntry" targetId="5af0-2e28-c071-d32d">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f37-5ed3-5ab6-ef12-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f37-5ed3-5ab6-ef12-max" includeChildSelections="false"/>
               </constraints>
               <costs>
@@ -1513,7 +1524,6 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
             </entryLink>
             <entryLink import="true" name="Protector Class Cruiser" hidden="false" id="10d9-5dfd-8711-a898" type="selectionEntry" targetId="7821-fa28-da68-401f" sortIndex="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ead-9039-cf30-41cf-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ead-9039-cf30-41cf-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
