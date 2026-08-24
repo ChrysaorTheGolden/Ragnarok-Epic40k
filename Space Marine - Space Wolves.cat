@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2da1-9477-9f3c-ea2b" name="Space Marines - Space Wolves" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2da1-9477-9f3c-ea2b" name="Space Marines - Space Wolves" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Support Packs" id="6485-3ee8-42bb-5176" hidden="false">
       <comment>max 1 per Core pack</comment>

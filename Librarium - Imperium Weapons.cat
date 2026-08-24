@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="e473-96d7-a3bd-c71d" name="Librarium - Imperium Weapons" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="e473-96d7-a3bd-c71d" name="Librarium - Imperium Weapons" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Heavy Flamer" typeId="9cd9-726a-f371-515f" typeName="Ranged Weapon" hidden="false" id="0455-c4bc-6a25-0a72">
       <characteristics>

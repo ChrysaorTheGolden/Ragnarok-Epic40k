@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="27bf-2e94-9e29-8b9c" name="Imperium - Collegia Titanica" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="27bf-2e94-9e29-8b9c" name="Imperium - Collegia Titanica" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Warhound" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="cced-48f9-3b2e-a40f">
       <characteristics>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="a745-8151-0677-17f1" name="T&apos;au Empire - Vior&apos;la" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Xenos - T&apos;au Empire" id="78e3-2655-12c3-d450" targetId="577a-2f18-0d58-7a37"/>
+  </catalogueLinks>
+  <forceEntries>
+    <forceEntry name="Cadre" id="d3b8-8d11-ce5a-31f9" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Vior&apos;la Core Formation" hidden="false" id="4735-eca9-f906-c535" targetId="19c2-dc96-9a60-4ffe"/>
+        <categoryLink name="Vior&apos;la Support Formations" hidden="false" id="ab18-ea4c-95ed-d0b2" targetId="12cb-71f6-d525-da6c"/>
+        <categoryLink name="Vior&apos;la War Engines and Air Caste Formations" hidden="false" id="4a17-3f3f-7ab6-4d35" targetId="11bb-c00b-0bb2-adc5"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <infoLinks>
+    <infoLink name="Strategy Rating and Initiative" id="0e97-c8ec-92cd-c4c3" hidden="false" type="rule" targetId="db68-b239-1360-75f4"/>
+    <infoLink name="Coordinated Fire" id="4ac2-9a69-1fa2-ba7d" hidden="false" type="rule" targetId="259f-b137-ceea-ef6c"/>
+    <infoLink name="Deflector Shield" id="f0ab-631d-8d87-d7cf" hidden="false" type="rule" targetId="445f-b7fc-a799-9480"/>
+    <infoLink name="Markerlights" id="572e-9acf-d322-2f08" hidden="false" type="rule" targetId="0b46-991e-b923-64fd"/>
+  </infoLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Additional Crisis Suits" id="48b8-60c6-5053-288b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Crisis Suits" hidden="false" id="39ae-b955-3816-c8d2">
+          <entryLinks>
+            <entryLink import="true" name="XV8 Crisis Battlesuits" hidden="false" id="f0db-fc53-d2f6-1d89" type="selectionEntry" targetId="002e-a5c1-5bdb-3745">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e3c8-430d-03e1-158b-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e3c8-430d-03e1-158b-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac9d-cb04-6168-0a30" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Drones" id="2289-c1ab-1a76-c124" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Gun Drones" hidden="false" id="2968-dd86-62dd-2cf9" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Gun Drones" hidden="false" id="371c-cc0e-409e-b229" type="selectionEntry" targetId="f57d-f3d2-d335-64ed">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5854-df8f-8276-3548-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5854-df8f-8276-3548-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Two Marker Drones" hidden="false" id="151c-918f-7776-dafd" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Marker Drone" hidden="false" id="57f9-8f10-22bb-9f85" type="selectionEntry" targetId="4fe3-4f46-48f5-8e84">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e8f-7564-48d9-109e-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e8f-7564-48d9-109e-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Two Shield Drones" hidden="false" id="dc12-07b1-c302-1e53" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Shield Drone" hidden="false" id="7114-8886-9535-1cff" type="selectionEntry" targetId="e50f-3d80-9c4d-3eff">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3304-439f-ad9e-ea0e-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3304-439f-ad9e-ea0e-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Two Missile Drones" hidden="false" id="7a0d-67ef-bcd1-a967" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Missile Drone" hidden="false" id="590e-36fd-9969-aef8" type="selectionEntry" targetId="1c43-fcb7-fa73-7190">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c4db-2cc6-d3b6-d2c9-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c4db-2cc6-d3b6-d2c9-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0eca-5774-642c-e850" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Marker Drones" hidden="false" id="4fe3-4f46-48f5-8e84" collective="true">
+      <infoLinks>
+        <infoLink name="Marker Drones" id="c9c7-57d6-b947-c1ba" hidden="false" type="profile" targetId="9e8f-4218-0cc8-d0bc"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shield Drones" hidden="false" id="e50f-3d80-9c4d-3eff" collective="true">
+      <infoLinks>
+        <infoLink name="Shield Drones" id="7128-122a-1a66-e9d8" hidden="false" type="profile" targetId="bf19-1f70-3756-a9a2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Missile Drones" hidden="false" id="1c43-fcb7-fa73-7190" collective="true">
+      <infoLinks>
+        <infoLink name="Missile Drones" id="4718-1715-eca5-bed7" hidden="false" type="profile" targetId="6e55-7d86-5c6f-18b3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="XV109 Y&apos;vahra Heavy Battlesuit Cadre" hidden="false" id="16f6-00d0-310c-4b63">
+      <entryLinks>
+        <entryLink import="true" name="XV109 Y&apos;vahra" hidden="false" id="899e-663b-1df3-99f1" type="selectionEntry" targetId="dfda-b487-4371-b118">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cd27-1b9a-2ea1-a03d" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2f10-51ec-2492-a494" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Shas&apos;el" hidden="false" id="784b-6493-7903-c5db" type="selectionEntry" targetId="e8f8-37fa-0c55-1274"/>
+        <entryLink import="true" name="Commander" hidden="false" id="edb9-a37d-62af-6f80" type="selectionEntryGroup" targetId="40aa-90fc-b6d1-2dc1"/>
+        <entryLink import="true" name="Drones" hidden="false" id="c2ea-3316-bdd2-8af0" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV104 Riptide" hidden="false" id="7902-792e-0608-c2e1" collective="true">
+      <infoLinks>
+        <infoLink name="XV104 Riptide Battlesuit" id="f12a-7603-4072-c981" hidden="false" type="profile" targetId="6438-efe6-d3b6-4975"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ion Accelerator" hidden="false" id="9567-dd62-8d88-e246">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6090-4e5c-8e31-1f2f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6090-4e5c-8e31-1f2f-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ion Accelerator" id="9ef4-b74f-d6bc-eb76" hidden="false" type="profile" targetId="99ac-b874-060a-5c8b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Twin Smart Missile System" hidden="false" id="b2f9-fef6-20ac-b798" type="selectionEntry" targetId="ec21-fbe2-81f9-7026">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c70e-479b-88da-2778-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c70e-479b-88da-2778-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Velocity Tracker" hidden="false" id="6856-3372-251a-1d4c" type="selectionEntry" targetId="13d6-0b6d-c147-1707">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff24-d268-2cb9-f787-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff24-d268-2cb9-f787-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Velocity Tracker" hidden="false" id="13d6-0b6d-c147-1707">
+      <infoLinks>
+        <infoLink name="Velocity Tracker" id="266b-5269-f959-3450" hidden="false" type="profile" targetId="fca4-0efe-9736-d7a5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV107 R&apos;varna" hidden="false" id="ac6a-c9e6-26ff-346d" collective="true">
+      <infoLinks>
+        <infoLink name="XV107 R&apos;varna Battlesuit" id="349f-40be-800e-03ca" hidden="false" type="profile" targetId="3f39-2c4d-0f4c-23d7"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pulse Submunition Cannons" hidden="false" id="ddd7-f66d-e4f4-a714">
+          <infoLinks>
+            <infoLink name="Pulse Submunitions Cannon" id="ee52-ef0a-571a-c9ce" hidden="false" type="profile" targetId="1d54-c3d2-0610-4b66"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV109 Y&apos;vahra" hidden="false" id="dfda-b487-4371-b118" collective="true">
+      <infoLinks>
+        <infoLink name="XV109 Y&apos;vahra Battlesuit" id="0c8a-8673-1798-62c7" hidden="false" type="profile" targetId="7583-6cef-3fb5-5aad"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Plasma Flamer" hidden="false" id="f3c9-6059-5293-a283">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91d7-b090-e231-86f5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91d7-b090-e231-86f5-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Plasma Flamer" id="6d53-3959-fccf-b799" hidden="false" type="profile" targetId="81da-d6e1-b7b3-6596"/>
+            <infoLink name="Plasma Flamer" id="0d40-ed2f-6b39-6a03" hidden="false" type="profile" targetId="3a7f-b63d-6bac-0181"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ionic Discharge Cannon" hidden="false" id="7e4f-6f16-197b-6c0b">
+          <infoLinks>
+            <infoLink name="Ionic Discharge Cannon" id="647b-eb84-5ba0-cb2a" hidden="false" type="profile" targetId="40b8-944a-1e25-ed47"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5828-eea2-5bf8-92fe-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5828-eea2-5bf8-92fe-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="XV107 R&apos;varna Heavy Battlesuit Cadre" hidden="false" id="77fa-afb0-d762-835f">
+      <entryLinks>
+        <entryLink import="true" name="XV107 R&apos;varna" hidden="false" id="df85-2b9c-0732-3d41" type="selectionEntry" targetId="ac6a-c9e6-26ff-346d">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="995f-0f9c-1a67-1776" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="0609-1793-8850-9ab3" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Shas&apos;el" hidden="false" id="3dfa-fb9b-aff6-658e" type="selectionEntry" targetId="e8f8-37fa-0c55-1274"/>
+        <entryLink import="true" name="Commander" hidden="false" id="89d6-3311-e6e5-7849" type="selectionEntryGroup" targetId="40aa-90fc-b6d1-2dc1"/>
+        <entryLink import="true" name="Drones" hidden="false" id="97b5-2131-8e6a-3402" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="XV104 Riptide Heavy Battlesuit Cadre" hidden="false" id="88f5-1e09-361b-9024">
+      <entryLinks>
+        <entryLink import="true" name="XV104 Riptide" hidden="false" id="0708-5cdc-b8f8-d59e" type="selectionEntry" targetId="7902-792e-0608-c2e1">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a49c-1acd-89b5-f969" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2d7d-8fd2-fcb2-e159" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Shas&apos;el" hidden="false" id="7ab9-2d8a-9c95-cfae" type="selectionEntry" targetId="e8f8-37fa-0c55-1274"/>
+        <entryLink import="true" name="Commander" hidden="false" id="1e32-7782-235a-a3d6" type="selectionEntryGroup" targetId="40aa-90fc-b6d1-2dc1"/>
+        <entryLink import="true" name="Drones" hidden="false" id="1039-91f4-625d-fdd3" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="XV8 Crisis Battlesuit Cadre" hidden="false" id="9097-2f0f-9a34-6f3e">
+      <comment>vior&apos;la</comment>
+      <entryLinks>
+        <entryLink import="true" name="XV8 Crisis Battlesuits" hidden="false" id="c2a7-a68e-a0b9-11d6" type="selectionEntry" targetId="002e-a5c1-5bdb-3745" sortIndex="1"/>
+        <entryLink import="true" name="Shas&apos;el" hidden="false" id="08e0-2317-fbd2-8c7a" type="selectionEntry" targetId="e8f8-37fa-0c55-1274" sortIndex="2"/>
+        <entryLink import="true" name="Commander" hidden="false" id="cdb7-5014-1e5b-7fb9" type="selectionEntryGroup" targetId="40aa-90fc-b6d1-2dc1" sortIndex="4"/>
+        <entryLink import="true" name="Additional Crisis Suits" hidden="false" id="9780-2698-a4f7-bfcb" type="selectionEntryGroup" targetId="48b8-60c6-5053-288b" sortIndex="3"/>
+        <entryLink import="true" name="Drones" hidden="false" id="8c2c-6303-d86c-be83" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124" sortIndex="5"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Drone Group" hidden="false" id="2444-be62-ec79-e603">
+      <entryLinks>
+        <entryLink import="true" name="Gun Drones" hidden="false" id="a4f0-70b0-d3c8-3e09" type="selectionEntry" targetId="f57d-f3d2-d335-64ed">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="f47f-9ada-78be-cdb8-min" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f47f-9ada-78be-cdb8-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="8" field="f47f-9ada-78be-cdb8-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="81ec-3b70-13d8-f07e" shared="true" childName="Replace Two Gun Drones With:"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="f47f-9ada-78be-cdb8-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="81ec-3b70-13d8-f07e" shared="true" childName="Replace Two Gun Drones With:"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Replace Two Gun Drones With:" id="81ec-3b70-13d8-f07e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Marker Drones" hidden="false" id="faf5-f465-bf48-5480" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Marker Drone" hidden="false" id="a008-4e36-c94e-1224" type="selectionEntry" targetId="4fe3-4f46-48f5-8e84">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d0a0-4532-d23d-0604-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d0a0-4532-d23d-0604-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two Shield Drones" hidden="false" id="4eac-1488-fef5-c2f8" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Shield Drone" hidden="false" id="5b23-5b2f-9a50-ec7f" type="selectionEntry" targetId="e50f-3d80-9c4d-3eff">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="893b-cac1-8b21-67c3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="893b-cac1-8b21-67c3-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two Missile Drones" hidden="false" id="d0a4-309d-a6ea-6266" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Missile Drone" hidden="false" id="079f-1d15-86a6-45b9" type="selectionEntry" targetId="1c43-fcb7-fa73-7190">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cbfb-6c26-f2d3-77ae-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cbfb-6c26-f2d3-77ae-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d826-6dd0-3baa-ea3c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fire Warrior Strike Group" hidden="false" id="2b9b-3b3f-00dd-cbba">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Fire Warriors" id="a2e1-40d9-447f-323b" hidden="false" flatten="true" defaultSelectionEntryId="f9f5-8ba5-7f46-9dc1" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbe9-03da-3f72-35b3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbe9-03da-3f72-35b3-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="8 Fire Warriors" hidden="false" id="7f4e-3084-aab0-8649" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Fire Warriors" hidden="false" id="129c-a5b0-d196-9823" type="selectionEntry" targetId="0a01-1034-9f62-bcf1">
+                  <constraints>
+                    <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="7599-8525-4bcd-c308-min" includeChildSelections="false"/>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="7599-8525-4bcd-c308-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 Fire Warriors, 3 Devilfish" hidden="false" id="683b-b4b6-0237-2a96" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Fire Warriors" hidden="false" id="0108-bc00-bcda-d893" type="selectionEntry" targetId="0a01-1034-9f62-bcf1" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="8baf-b19e-703c-fdb9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8baf-b19e-703c-fdb9-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Devilfish" hidden="false" id="9b9a-dc0f-4b11-7424" type="selectionEntry" targetId="aa8b-2ef1-e06e-abdf" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7a17-ee64-f742-6bb9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7a17-ee64-f742-6bb9-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Broadsides" hidden="false" id="bacc-ca93-b2dd-15a9" type="selectionEntryGroup" targetId="807d-7474-3625-bcc0" sortIndex="3"/>
+        <entryLink import="true" name="Sky Ray" hidden="false" id="c927-fc6c-e436-dfef" type="selectionEntryGroup" targetId="1f0d-26ff-44ff-aedd" sortIndex="4"/>
+        <entryLink import="true" name="Drones" hidden="false" id="8831-30cd-841d-d0e2" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Stealth Group" hidden="false" id="d9cf-de97-64f4-e421">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Stealth Suits" id="157a-e23a-54b1-2ac9" hidden="false" flatten="true" defaultSelectionEntryId="f9f5-8ba5-7f46-9dc1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66a4-44d2-4fd6-4cae-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66a4-44d2-4fd6-4cae-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="6 XV15 Stealth Battlesuits" hidden="false" id="2100-59b7-c7d9-55c1" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="XV 15 Stealth Battlesuits" hidden="false" id="2758-5292-5f41-802b" type="selectionEntry" targetId="cf8c-8759-7070-13d1">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="e2e2-72ba-95f3-6c07-min" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e2e2-72ba-95f3-6c07-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="3 XV15, 3 XV95 Ghostkeel" hidden="false" id="428f-bafb-7c19-1f1d" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="XV95 Ghostkeel" hidden="false" id="7f2b-a312-3c1a-334b" type="selectionEntry" targetId="4385-4fb6-044f-3f76" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d7e6-5c5c-5dc6-9e73-min" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d7e6-5c5c-5dc6-9e73-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="XV 15 Stealth Battlesuits" hidden="false" id="178b-3df0-4964-0c13" type="selectionEntry" targetId="cf8c-8759-7070-13d1" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7889-5e92-7874-aaf0-min" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7889-5e92-7874-aaf0-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Drones" hidden="false" id="05d1-70f5-a9bf-70e6" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="XV95 Ghostkeel" hidden="false" id="4385-4fb6-044f-3f76" collective="true">
+      <infoLinks>
+        <infoLink name="XV95 Ghostkeel Battlesuit" id="6d66-9b39-39cd-191a" hidden="false" type="profile" targetId="67c9-c2f8-4695-9f6a"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusion Blaster" hidden="false" id="4607-c24d-fa27-c144">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb5b-e1e2-45e7-b3ed-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb5b-e1e2-45e7-b3ed-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fusion Blaster" id="dd86-eb18-30e0-90f2" hidden="false" type="profile" targetId="fff0-77da-332b-4e64"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cyclic Ion Raker" hidden="false" id="2b18-980a-9b3f-629a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1403-51d6-34b7-18f4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1403-51d6-34b7-18f4-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Cyclic Ion Raker" id="75e8-44c1-4c8f-f8ef" hidden="false" type="profile" targetId="f7f0-8d5d-4074-1f1d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skysweep Support Group" hidden="false" id="3545-5386-a77b-97f9">
+      <entryLinks>
+        <entryLink import="true" name="Sky Ray" hidden="false" id="c7f0-fc31-194f-fb1c" type="selectionEntry" targetId="c7d1-f68e-600f-dcaf">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d661-4674-ccb8-0162-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d661-4674-ccb8-0162-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Drones" hidden="false" id="4508-d9dd-4963-e4e8" type="selectionEntryGroup" targetId="2289-c1ab-1a76-c124"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="KX139 Supremancy Armour" hidden="false" id="f112-3e6e-bec0-f5e3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="KX139 Tau&apos;nar Supremancy Armour" hidden="false" id="b1ac-4663-cee4-c403">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9b9-53b2-1742-9fc0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9b9-53b2-1742-9fc0-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin Burst Cannon" hidden="false" id="32f2-5ceb-7085-91a8" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b2b0-6f66-e9dd-4f5e-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2b0-6f66-e9dd-4f5e-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Twin Burst Cannon" id="1ce2-5dc3-ab89-4824" hidden="false" type="profile" targetId="5ed0-674b-93a3-44d5"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tri-axis Ion Cannon" hidden="false" id="0efc-4641-6850-5ec3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3c15-b6c6-19dc-f5fc-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3c15-b6c6-19dc-f5fc-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Tri-axis Ion Cannon" id="4121-3dce-bc5e-dc04" hidden="false" type="profile" targetId="efd0-0d9c-949e-3f76"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Smart Missile System" hidden="false" id="6e91-7b27-61f5-171f" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dca4-477d-89a1-dbca-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dca4-477d-89a1-dbca-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Twin Smart Missile System" id="4373-6902-ed22-c5e4" hidden="false" type="profile" targetId="7284-6eea-8bd3-58a6"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Gun" id="d956-8127-6d87-80f2" hidden="false" flatten="true" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="feb5-68ed-941c-ab58-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feb5-68ed-941c-ab58-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Nexus Missile Array" hidden="false" id="91fe-8930-c2b1-95b3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4474-146f-8779-3728" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Nexus Missile Array" id="9d3b-6a72-12cd-5fc5" hidden="false" type="profile" targetId="7519-4e86-b14a-5014"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Railcannon" hidden="false" id="a2ee-7920-2447-2582">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faad-c924-2cbf-7319" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Railcannon" id="46cc-ae7c-67eb-2dd1" hidden="false" type="profile" targetId="74be-d7e1-7f20-488d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pulse Ordnance Multidriver" hidden="false" id="8e8e-d9aa-644f-5e3e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3693-7257-4cdb-98db" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Pulse Ordnance Multi-driver (dispersed)" id="7351-3ab0-6fdf-1c9f" hidden="false" type="profile" targetId="194b-1179-bece-6381"/>
+                    <infoLink name="Pulse Ordnance Multi-driver (focused)" id="96e8-1756-b7e8-1e9c" hidden="false" type="profile" targetId="77c8-9793-f5a4-889d"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="KX139 Tau&apos;nar Supremacy Armour" id="5ab9-238c-795c-11a1" hidden="false" type="profile" targetId="2c9f-2831-52b9-9ceb"/>
+            <infoLink name="KX139 Tau&apos;nar Supremacy Armour" id="b231-0e81-ae45-87d5" hidden="false" type="profile" targetId="961b-4959-2235-38a5"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Shas&apos;el" hidden="false" id="01d3-a3da-229c-8ca1" type="selectionEntry" targetId="e8f8-37fa-0c55-1274"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="KV128 Stormsurge Suit" hidden="false" id="326c-6e8a-63d7-453c">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="KV128 Stormsurge" hidden="false" id="061c-74d5-aa9d-f909">
+          <infoLinks>
+            <infoLink name="KV128 Stormsurge Ballistic Suit" id="eacd-493a-ad85-f22e" hidden="false" type="profile" targetId="9ba7-6488-647a-279b"/>
+            <infoLink name="KV128 Stormsurge Ballistic Suit" id="250b-d91a-038c-e68b" hidden="false" type="profile" targetId="fa6a-d995-6dc1-eeb1"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Configuration" id="189a-989e-0c1f-d1e6" hidden="false" defaultSelectionEntryId="496a-a7ee-00dd-e47b" flatten="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Standard Configuration" hidden="false" id="496a-a7ee-00dd-e47b" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Pulse Driver Cannon" id="18bc-5b84-160f-c5ed" hidden="false" type="profile" targetId="7455-f193-794e-9808"/>
+                    <infoLink name="Destroyer Missile" id="6159-3f42-efce-7669" hidden="false" type="profile" targetId="867c-e877-eaf9-c4e9"/>
+                    <infoLink name="Velocity Tracker" id="92e0-0d8d-ef91-db67" hidden="false" type="profile" targetId="fca4-0efe-9736-d7a5"/>
+                    <infoLink name="Destroyer Missile" id="7b58-34c9-ecc8-f8dc" hidden="false" type="profile" targetId="867c-e877-eaf9-c4e9"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6f5-dc34-d8a2-b1ce" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Support Configuration" hidden="false" id="765d-e193-1db4-9fdd" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Pulse Blastcannon" id="940d-6648-2b17-9290" hidden="false" type="profile" targetId="4826-eabe-07cc-06a0"/>
+                    <infoLink name="Twin Smart Missile System" id="b5ae-8556-0eac-d7c1" hidden="false" type="profile" targetId="7284-6eea-8bd3-58a6"/>
+                    <infoLink name="Velocity Tracker" id="951c-3f94-a58d-fe16" hidden="false" type="profile" targetId="fca4-0efe-9736-d7a5"/>
+                    <infoLink name="Twin Smart Missile System" id="3e90-0d06-8bdb-af93" hidden="false" type="profile" targetId="7284-6eea-8bd3-58a6"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dcd-18c5-8746-b54d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f00a-1478-e33a-6913-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f00a-1478-e33a-6913-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea01-01a3-dd70-6852-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea01-01a3-dd70-6852-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tiger Shark Squadron" hidden="false" id="5247-60be-acb3-1f16">
+      <entryLinks>
+        <entryLink import="true" name="Tigershark Bomber" hidden="false" id="64c0-fc59-ec1b-28ac" type="selectionEntry" targetId="752b-9758-d6d3-a247">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8cc1-3521-721a-75be-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8cc1-3521-721a-75be-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drones" id="123b-e025-f436-537c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Six Gun Drones" hidden="false" id="8d6f-8086-e832-f1b7" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Gun Drones" hidden="false" id="d977-748d-d7e7-1596" type="selectionEntry" targetId="f57d-f3d2-d335-64ed">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="c542-77c1-54b7-d118-min" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c542-77c1-54b7-d118-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Six Missile Drones" hidden="false" id="1f11-7d25-0d75-46a9" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="e326-38bf-7cb2-f877" value="75"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Missile Drone" hidden="false" id="320f-0fb3-862b-56b5" type="selectionEntry" targetId="1c43-fcb7-fa73-7190">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="360a-1e0b-d4a8-20a9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="360a-1e0b-d4a8-20a9-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8068-2558-ddd9-c943" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>vior&apos;la</comment>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="XV104 Riptide Heavy Battlesuit Cadre" hidden="false" id="cd75-cfcb-c310-d28c" type="selectionEntry" targetId="88f5-1e09-361b-9024">
+      <categoryLinks>
+        <categoryLink targetId="19c2-dc96-9a60-4ffe" id="d89f-817d-e1e1-bd10" primary="true" name="Vior&apos;la Core Formation"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="XV107 R&apos;varna Heavy Battlesuit Cadre" hidden="false" id="ec23-5066-c5d2-8420" type="selectionEntry" targetId="77fa-afb0-d762-835f">
+      <categoryLinks>
+        <categoryLink targetId="19c2-dc96-9a60-4ffe" id="0c97-7ff4-05d0-71b7" primary="true" name="Vior&apos;la Core Formation"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="XV109 Y&apos;vahra Heavy Battlesuit Cadre" hidden="false" id="6a7d-22ce-8c6a-7d59" type="selectionEntry" targetId="16f6-00d0-310c-4b63">
+      <categoryLinks>
+        <categoryLink targetId="19c2-dc96-9a60-4ffe" id="8d39-0fd0-7a4e-5a88" primary="true" name="Vior&apos;la Core Formation"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="XV8 Crisis Battlesuit Cadre" hidden="false" id="b887-1829-3e21-232e" type="selectionEntry" targetId="9097-2f0f-9a34-6f3e">
+      <categoryLinks>
+        <categoryLink targetId="19c2-dc96-9a60-4ffe" id="a20e-c914-58d4-5843" primary="true" name="Vior&apos;la Core Formation"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stealth Group" hidden="false" id="e566-0283-0672-c3a4" type="selectionEntry" targetId="d9cf-de97-64f4-e421">
+      <categoryLinks>
+        <categoryLink targetId="12cb-71f6-d525-da6c" id="3759-381f-57f6-6469" primary="true" name="Vior&apos;la Support Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="225"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Fire Warrior Strike Group" hidden="false" id="d6ab-4c42-6caf-85d1" type="selectionEntry" targetId="2b9b-3b3f-00dd-cbba">
+      <categoryLinks>
+        <categoryLink targetId="12cb-71f6-d525-da6c" id="949f-0de3-8310-7e00" primary="true" name="Vior&apos;la Support Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="225"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Drone Group" hidden="false" id="3541-6c5c-f186-9bbf" type="selectionEntry" targetId="2444-be62-ec79-e603">
+      <categoryLinks>
+        <categoryLink targetId="12cb-71f6-d525-da6c" id="e766-1a25-627b-600a" primary="true" name="Vior&apos;la Support Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="150"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Skysweep Support Group" hidden="false" id="3f93-5501-6639-9587" type="selectionEntry" targetId="3545-5386-a77b-97f9">
+      <categoryLinks>
+        <categoryLink targetId="12cb-71f6-d525-da6c" id="ec3c-38e2-1b96-73ed" primary="true" name="Vior&apos;la Support Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="250"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Barracuda Squadron" hidden="false" id="3092-7a82-257f-771e" type="selectionEntry" targetId="3b45-6158-2f98-68c4">
+      <categoryLinks>
+        <categoryLink targetId="11bb-c00b-0bb2-adc5" id="0ca3-8093-275d-3131" primary="true" name="Vior&apos;la War Engines and Air Caste Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="150"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="KX139 Supremancy Armour" hidden="false" id="8fc3-ef9c-03c5-9ac3" type="selectionEntry" targetId="f112-3e6e-bec0-f5e3">
+      <categoryLinks>
+        <categoryLink targetId="11bb-c00b-0bb2-adc5" id="e180-11d8-17cb-e7db" primary="true" name="Vior&apos;la War Engines and Air Caste Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="500"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="KV128 Stormsurge Suit" hidden="false" id="cd66-3779-9759-7aa6" type="selectionEntry" targetId="326c-6e8a-63d7-453c">
+      <categoryLinks>
+        <categoryLink targetId="11bb-c00b-0bb2-adc5" id="43da-a24d-5d31-cae6" primary="true" name="Vior&apos;la War Engines and Air Caste Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="225"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Tiger Shark Squadron" hidden="false" id="5a53-2568-cb6a-b390" type="selectionEntry" targetId="5247-60be-acb3-1f16">
+      <categoryLinks>
+        <categoryLink targetId="11bb-c00b-0bb2-adc5" id="7d90-f5c8-0358-3313" primary="true" name="Vior&apos;la War Engines and Air Caste Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="175"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="T&apos;au Spacecraft" hidden="false" id="226a-3217-0f81-8619" type="selectionEntry" targetId="0015-5eac-0217-22f1">
+      <categoryLinks>
+        <categoryLink targetId="11bb-c00b-0bb2-adc5" id="2cb8-3f9f-7dba-34e7" primary="true" name="Vior&apos;la War Engines and Air Caste Formations"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="e326-38bf-7cb2-f877" value="200"/>
+      </costs>
+    </entryLink>
+  </entryLinks>
+</catalogue>

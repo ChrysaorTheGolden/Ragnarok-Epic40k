@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-ddf1-f1c4-f4c4-87c4" name="Epic Armageddon - Ragnarok" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-ddf1-f1c4-f4c4-87c4" name="Epic Armageddon - Ragnarok" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Configuration" id="cca8-0540-7090-2085" hidden="false"/>
     <categoryEntry name="Spacecraft" id="3680-8ae3-3e82-721f" hidden="false">

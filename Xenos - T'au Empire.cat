@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="577a-2f18-0d58-7a37" name="Xenos - T&apos;au Empire" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="577a-2f18-0d58-7a37" name="Xenos - T&apos;au Empire" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Coordinated Fire" id="259f-b137-ceea-ef6c" hidden="false">
       <description>A formation that contains at least one unit with Coordinated Fire can order up to two other un-broken formations within 15cm that have not taken an action this turn to follow their own formation when they take an Advance, Double or Sustained Fire action.
@@ -1497,6 +1497,46 @@ May also carry up to two Gun Drones in addition to any other cargo.</characteris
       <costs>
         <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="T&apos;au Spacecraft" hidden="false" id="0015-5eac-0217-22f1">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Spacecraft" id="11a4-dd12-eb51-0cb4" hidden="false" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Custodian Class Battleship" hidden="false" id="2185-b91f-a2cd-06cf" type="selectionEntry" targetId="5af0-2e28-c071-d32d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f37-5ed3-5ab6-ef12-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f37-5ed3-5ab6-ef12-max" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="e326-38bf-7cb2-f877" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Protector Class Cruiser" hidden="false" id="10d9-5dfd-8711-a898" type="selectionEntry" targetId="7821-fa28-da68-401f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ead-9039-cf30-41cf-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ead-9039-cf30-41cf-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a029-0546-7ab3-437d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a029-0546-7ab3-437d-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Spacecraft" hidden="false" id="f64c-66b6-f7a4-7c68" targetId="3680-8ae3-3e82-721f" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Barracuda Squadron" hidden="false" id="3b45-6158-2f98-68c4">
+      <entryLinks>
+        <entryLink import="true" name="Barracuda" hidden="false" id="0ac7-4dea-67e0-fe0b" type="selectionEntry" targetId="0ccd-6899-0278-1fe7">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ea17-594f-5b3f-0e97-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ea17-594f-5b3f-0e97-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

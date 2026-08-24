@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="4c1c-1dac-1a0d-afd6" name="Librarium - Aeronautica" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="4c1c-1dac-1a0d-afd6" name="Librarium - Aeronautica" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Marauder Bomber" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="b0ef-ca70-ad5e-6c11">
       <characteristics>

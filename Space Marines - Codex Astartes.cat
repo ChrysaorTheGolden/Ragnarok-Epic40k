@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b96c-4bf2-b944-924f" name="Space Marines - Codex Astartes" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b96c-4bf2-b944-924f" name="Space Marines - Codex Astartes" gameSystemId="sys-ddf1-f1c4-f4c4-87c4" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Assaults" typeId="2bde-c253-14cb-e10b" typeName="Unit" hidden="false" id="89d6-f5fe-8cbe-8e44">
       <characteristics>
@@ -273,14 +273,14 @@
         <characteristic name="Armour" typeId="3658-a380-5564-f0af">4+</characteristic>
         <characteristic name="CC" typeId="ffe2-6687-d136-5a8c">6+</characteristic>
         <characteristic name="FF" typeId="4906-68a5-aebd-4073">3+</characteristic>
-        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36"> Fearless, Planetfall, Reinforced Armour, Transport</characteristic>
+        <characteristic name="Abilities" typeId="6b56-205a-a47c-ba36">Fearless, Planetfall, Reinforced Armour, Transport</characteristic>
       </characteristics>
     </profile>
     <profile name="Landing Craft" typeId="3511-2c68-62ed-e6eb" typeName="War Engine" hidden="false" id="e1b7-04af-bf6c-8582">
       <characteristics>
         <characteristic name="Damage Capacity" typeId="d04e-5440-a507-67bd">4</characteristic>
         <characteristic name="Shields" typeId="3309-b36b-a513-15bd"/>
-        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Landing Craft and all units being carried are destroyed. All units within 5cm suffer a hit. </characteristic>
+        <characteristic name="Critical Hit" typeId="1eff-f869-9262-b0f6">The Landing Craft and all units being carried are destroyed. All units within 5cm suffer a hit.</characteristic>
       </characteristics>
     </profile>
     <profile name="Landing Craft" typeId="0a48-73e7-5d18-a84d" typeName="Transport" hidden="false" id="2cc8-dfea-29cc-97be">
